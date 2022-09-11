@@ -2,20 +2,24 @@ body * {
   outline: 1px solid lightgrey;
   }
 body > div {
-  border: 5px solid rgb(226, 12, 12);
+  border: 4px solid red;
 }
 .main-nav {
-  border: 5px solid red;
+  border: 4px solid red;
    }
  .main-nav li {
   width: 100px;
   margin-right: 0%;
+  display: flex;
+ }
+ .main-nav ul {
+  display: flex;
  }
  .sub-menu {
   border: dashed green 3px;
  }
 .blocks {
-  border: 5px solid red;
+  border: 4px solid red;
     }
 .blocks > span {
 padding-right: 97%;
@@ -24,10 +28,8 @@ padding-right: 97%;
   font-weight: bold;
   color: rgb(7, 247, 7);
   }
-.container .span{
-    }
 .inline {
-  border: 5px solid green;
+  border: 4px solid green;
 }
 .inline p {
 color: blue;
