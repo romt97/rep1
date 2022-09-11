@@ -1,11 +1,15 @@
 body * {
   outline: 1px solid lightgrey;
+  }
+body > div {
+  border: 5px solid rgb(226, 12, 12);
 }
 .main-nav {
   border: 5px solid red;
- }
+   }
  .main-nav li {
   width: 100px;
+  margin-right: 0%;
  }
  .sub-menu {
   border: dashed green 3px;
@@ -13,14 +17,18 @@ body * {
 .blocks {
   border: 5px solid red;
     }
-.blocks span {
+.blocks > span {
+padding-right: 97%;
 }
 .blocks p {
   font-weight: bold;
   color: rgb(7, 247, 7);
   }
-.container span{
+.container .span{
     }
+.inline {
+  border: 5px solid green;
+}
 .inline p {
 color: blue;
 font-weight: bold;
