@@ -4,14 +4,18 @@ body * {
 .main-nav {
   border: 5px solid red;
  }
+ .main-nav li {
+  width: 100px;
+
+
+ }
  .sub-menu {
   border: dashed green 3px;
  }
 .blocks {
   border: 5px solid red;
-  }
+    }
 .blocks span {
-  all: none;
 }
 .blocks p {
   font-weight: bold;
