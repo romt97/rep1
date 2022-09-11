@@ -1,5 +1,25 @@
 body * {
   outline: 1px solid lightgrey;
 }
+.main-nav {
+  border: 5px solid red;
+ }
+ .sub-menu {
+  border: dashed green 3px;
 
+ }
+.blocks {
+  border: 5px solid red;
+  }
+.blocks span {
 
+}
+.blocks p {
+  color: green;
+}
+.container span p {
+  border: 5px solid red
+  }
+.inline p {
+color: blue;
+}
