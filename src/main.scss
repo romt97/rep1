@@ -2,18 +2,39 @@ body * {
   outline: 1px solid lightgrey;
 }
 
-.column {
-  background-color: lightblue;
-  min-width: 33.3%;
-  width: 33.3%;
+.column-inline {
+  background-color: #358765;
+  margin-left: auto;
+  margin-right: auto;
+  height: 49px;
+  width: 45%;
 }
 
-.oneblock {
-  font-size: 0;
-  background-color: rgb(44, 155, 94);
+.column-flex{
+background-color: #588924;
+height: 116px;
+width: 153px;
 }
 
-.oneblock .block {
-  display: inline-block;
-  font-size: 1rem;
+.box3{
+  display: flex;
+}
+.column4 {
+  background-color: #EE2525;
+}
+
+.column5 {
+  background-color: #2D4BB5;
+}
+
+.column6 {
+  background-color: #EDF111 ;
+}
+
+.column7 {
+  background-color: #C4C4C4;
+}
+
+.column2 {
+  height: 116px;
 }
