@@ -2,7 +2,7 @@ body * {
   outline: 1px solid lightgrey;
 }
 
-.oneblock {
+.header {
   background-color: #358765;
   margin: auto;
   margin-top: 35px;
@@ -10,43 +10,43 @@ body * {
   height: 60px;
 }
 
-.coupleblock {
+.main{
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.box {
+.section {
   margin: 25px;
   width: 15%;
   height: 170px;
   background-color: #588924;
 }
 
-.trio {
+.columns {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.box1 {
+.column1 {
   margin: 0px;
   width: 15%;
   height: 170px;
   background-color: #EE2525;
 }
 
-.box2 {
+.column2 {
   width: 15%;
   background-color: #2D4BB5;
 }
 
-.box3 {
+.column3 {
   background-color: #EDF111;
   width: 15%;
 }
 
-.basement {
+.footer {
   margin: auto;
   margin-top: 45px;
   width: 45%;
