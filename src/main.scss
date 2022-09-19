@@ -1,3 +1,69 @@
 body * {
-  outline: 1px solid lightgrey;
+  // outline: 1px solid lightgrey;
+}
+
+header {
+  margin-top: 50px;
+  font-family: 'Courier New', Courier, monospace Arial, Helvetica, sans-serif;
+}
+
+.menu * {
+  margin: 0px;
+  padding: 1px;
+  border-radius: 10px;
+}
+
+.menu ul,
+.menu ol {
+  list-style: none;
+}
+
+.menu>ul {
+  display: flex;
+  justify-content: center;
+}
+
+.menu>ul li a {
+  display: block;
+  background: #7042ad;
+  padding: 15px 30px 15px;
+  font-size: 14px;
+  color: aliceblue;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.menu li a:hover {
+  background: rgb(174, 165, 224);
+  color: white;
+  box-shadow: 1px 5px 10px -5px black;
+  transition: all 0.3s ease;
+}
+
+.menu li ul {
+  position: absolute;
+  min-width: 150px;
+  display: none;
+
+}
+
+.menu li>ul li {
+  border: 1px solid #8d9bb9;
+}
+
+.menu li>ul li a {
+  padding: 10px;
+  text-transform: none;
+  background: rgb(119, 101, 168);
+}
+
+.menu li>ul li ul {
+  position: absolute;
+  right: -150px;
+  top: 0;
+}
+
+.menu li:hover>ul {
+  display: block;
 }
