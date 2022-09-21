@@ -36,7 +36,7 @@ header {
 
 .menu li a:hover {
   background: rgb(174, 165, 224);
-  color: white;
+  color: rgb(238, 221, 221);
   box-shadow: 1px 5px 10px -5px black;
   transition: all 0.3s ease;
 }
@@ -61,7 +61,7 @@ header {
 .menu li>ul li ul {
   position: absolute;
   right: -150px;
-  top: 0;
+  top: 0px;
 }
 
 .menu li:hover>ul {
