@@ -2,54 +2,53 @@ body * {
   outline: 1px solid lightgrey;
 }
 
+.main-content {
+  margin: 25px 25px 0;
+}
+
+
 .header {
-  background-color: #358765;
-  margin: auto;
-  margin-top: 35px;
-  width: 25%;
-  height: 60px;
+  width: 50%;
+  height: 40px;
+  background-color: lightgrey;
+  margin: 0 auto;
 }
 
-.main{
+.banners {
+  margin: 40px 0;
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
 }
 
-.section {
-  margin: 25px;
-  width: 15%;
-  height: 170px;
-  background-color: #588924;
+.banner {
+  background-color: green;
+  height: 80px;
+  width: 50%;
+  margin: 0 26px;
 }
 
 .columns {
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
 }
 
-.column1 {
-  margin: 0px;
-  width: 15%;
-  height: 170px;
-  background-color: #EE2525;
+.column {
+  height: 80px;
+  width: 33,3%;
 }
 
-.column2 {
-  width: 15%;
-  background-color: #2D4BB5;
+.red {
+  background-color: red;
 }
 
-.column3 {
-  background-color: #EDF111;
-  width: 15%;
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
 }
 
 .footer {
-  margin: auto;
-  margin-top: 45px;
-  width: 45%;
   height: 55px;
-  background-color: #C4C4C4;
+  background-color: gray;
+  margin-top: 25px;
 }
