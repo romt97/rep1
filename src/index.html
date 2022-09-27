@@ -14,7 +14,13 @@
   <header>
     <div class="container header">
       @@include("./partials/logo/_logo.html")
-      <nav class="main-menu">menu</nav>
+      <nav class="main-menu">
+        @@include("./partials/menu-item/menu-item.html", {"menuItem": "home"})
+        @@include("./partials/menu-item/menu-item.html", {"menuItem": "about"})
+        @@include("./partials/menu-item/menu-item.html", {"menuItem": "work"})
+        @@include("./partials/menu-item/menu-item.html", {"menuItem": "blog"})
+        @@include("./partials/menu-item/menu-item.html", {"menuItem": "contact"})
+      </nav>
     </div>
   </header>
   <div class="slider">
