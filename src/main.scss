@@ -83,3 +83,26 @@
   float: right;
   padding-right: 5%;
 }
+
+.message-head p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: #fb9c06;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.message-box {
+  padding: 0 10% 1%;
+}
+
+.type-container {
+  font-size: 30px;
+  color: #fb9c06;
+  }
+
+  .type-container input {
+width: 90%;
+  }
