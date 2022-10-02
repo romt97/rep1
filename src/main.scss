@@ -69,9 +69,8 @@
 .column-container {
   column-count: 4;
   display: flex;
-  width: 80%;
-  padding-left: 10%;
-  padding-right: 10%;
+  margin: 0 auto;
+  max-width: 1229px;
 }
 
 .column-container p {
@@ -103,8 +102,54 @@
 .type-container {
   font-size: 30px;
   color: #fb9c06;
-  }
+}
 
-  .type-container input {
-width: 90%;
-  }
+.type-container input {
+  width: 90%;
+}
+
+.meattheteam{
+text-align: center;
+font-size: 40px;
+color: #fb9c06;
+text-decoration: underline;
+margin-bottom: 30px;
+
+}
+.position {
+  color: #fb9c06;
+}
+
+.animals {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.animal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aimalname {
+  font-size: 25px;
+  text-align: center;
+  margin: 5% 0% 5% 0%;
+}
+
+.personalphoto img {
+  padding: 0;
+  margin-bottom: 30px;
+  border: 5px solid #fb9c06;
+  border-radius: 50%;
+
+}
+
+.description {
+  max-width: 225px;
+  font-size: 20px;
+  margin: 0 auto;
+}
