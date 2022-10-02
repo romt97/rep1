@@ -85,36 +85,14 @@
   color: #fb9c06;
 }
 
-.message-head p {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.meattheteam {
+  text-align: center;
   font-size: 40px;
   color: #fb9c06;
   text-decoration: underline;
-  font-weight: bold;
+  margin-bottom: 30px;
 }
 
-.message-box {
-  padding: 0 10% 1%;
-}
-
-.type-container {
-  font-size: 30px;
-  color: #fb9c06;
-}
-
-.type-container input {
-  width: 90%;
-}
-
-.meattheteam{
-text-align: center;
-font-size: 40px;
-color: #fb9c06;
-text-decoration: underline;
-margin-bottom: 30px;
-}
 .position {
   color: #fb9c06;
 }
@@ -151,4 +129,27 @@ margin-bottom: 30px;
   max-width: 225px;
   font-size: 20px;
   margin: 0 auto;
+}
+
+.message-head p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: #fb9c06;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.message-box {
+  padding: 0 10% 1%;
+}
+
+.type-container {
+  font-size: 30px;
+  color: #fb9c06;
+}
+
+.type-container input {
+  width: 90%;
 }
