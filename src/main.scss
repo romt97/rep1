@@ -2,9 +2,9 @@
 @import "./sprites.scss";
 @import "./partials/menu-item/menu-item.scss";
 
-// body * {
-//   outline: 1px solid lightgrey;
-// }
+body * {
+  outline: 1px solid lightgrey;
+}
 
 .container {
   max-width: 1220px;
@@ -150,6 +150,17 @@
   color: #fb9c06;
 }
 
-.type-container input {
-  width: 90%;
+.name>p {
+  padding-right: 20px;
+}
+
+#name {
+  padding-right: 50px;
+}
+
+#email {}
+
+#message {
+  width: 80%;
+  height: 100px;
 }
