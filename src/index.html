@@ -118,23 +118,30 @@
       <div class="message-head">
         <p>Send us a message...</p>
       </div>
-      <div class="type-container">
-        <div class="input">
-          <div class="name">
-            <p>Name: <input id="name" type="text" name="firstname"></p>
-            <p>Email: <input id="email" type="text" name="email"></p>
-            <p>Message: <input id="message" type="text" name="message"></p>
-          </div>
-        </div>
+      <form action="get" class="typeform">
+        <label for="name" class="typeform_input">
+          Name:
+        </label>
+        <input id="name" type="text">
+        <label for="email" class="typeform_input">
+          Email:
+        </label>
+        <input id="email" type="text">
+        <label for="message" class="typeform_input">
+          Message:
+        </label>
+        <textarea id="message"></textarea>
+      </form>
+      <div class="button">
+        <button class="submbutton">Submit</button>
       </div>
     </div>
-  </div>
 
-  <footer class="footer">
-    <div class="container footer-content">
-      COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT.
-    </div>
-  </footer>
+    <footer class="footer">
+      <div class="container footer-content">
+        COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT.
+      </div>
+    </footer>
 
 </body>
 
