@@ -2,9 +2,9 @@
 @import "./sprites.scss";
 @import "./partials/menu-item/menu-item.scss";
 
-// body * {
-//   outline: 1px solid lightgrey;
-// }
+body * {
+  outline: 1px solid lightgrey;
+}
 
 .container {
   max-width: 1220px;
@@ -66,23 +66,51 @@
   margin: 0;
 }
 
-.column-container {
-  column-count: 4;
-  display: flex;
+// .column-container {
+//   column-count: 4;
+//   display: flex;
+//   margin: 0 auto;
+//   max-width: 1229px;
+// }
+
+// .column-container p {
+//   padding: 3%;
+//   display: block;
+// }
+
+// .column-container a {
+//   float: right;
+//   padding-right: 5%;
+//   text-decoration: none;
+//   color: #fb9c06;
+// }
+
+.accordeon {
+  width: 265px;
   margin: 0 auto;
   max-width: 1229px;
-}
 
-.column-container p {
-  padding: 3%;
-  display: block;
-}
+  &__content {
+    max-height: 160px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
 
-.column-container a {
-  float: right;
-  padding-right: 5%;
-  text-decoration: none;
-  color: #fb9c06;
+  &__toggler {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    color: #fb9c06;
+  }
+
+  &__input:checked ~ &__content {
+    max-height: 100vh;
+    transition: 1s;
+  }
+
+  &__input {
+    display: none;
+  }
 }
 
 .meattheteam {
