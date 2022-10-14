@@ -66,31 +66,21 @@ body * {
   margin: 0;
 }
 
-// .column-container {
-//   column-count: 4;
-//   display: flex;
-//   margin: 0 auto;
-//   max-width: 1229px;
-// }
-
-// .column-container p {
-//   padding: 3%;
-//   display: block;
-// }
-
-// .column-container a {
-//   float: right;
-//   padding-right: 5%;
-//   text-decoration: none;
-//   color: #fb9c06;
-// }
+.accordeon-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1229px;
+}
 
 .accordeon {
+  display: inline-flex;
+  flex-direction: column;
   width: 265px;
-  margin: 0 auto;
   max-width: 1229px;
 
   &__content {
+    margin: 20px auto 10px;
     max-height: 160px;
     overflow: hidden;
     transition: 0.5s;
@@ -101,9 +91,10 @@ body * {
     width: 100%;
     text-align: right;
     color: #fb9c06;
+    margin: auto auto 25px;
   }
 
-  &__input:checked ~ &__content {
+  &__input:checked~&__content {
     max-height: 100vh;
     transition: 1s;
   }
