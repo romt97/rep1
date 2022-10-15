@@ -1,10 +1,11 @@
 @import "./partials/logo/logo.scss";
 @import "./sprites.scss";
 @import "./partials/menu-item/menu-item.scss";
+@import "./variables";
 
-body * {
-  outline: 1px solid lightgrey;
-}
+// body * {
+//   outline: 1px solid lightgrey;
+// }
 
 .container {
   max-width: 1220px;
@@ -74,32 +75,41 @@ body * {
 }
 
 .accordeon {
-  display: inline-flex;
-  flex-direction: column;
   width: 265px;
   max-width: 1229px;
 
+  input {
+    display: none;
+  }
+
   &__content {
     margin: 20px auto 10px;
+    padding: 5%;
     max-height: 160px;
     overflow: hidden;
     transition: 0.5s;
+    text-align: justify;
   }
 
   &__toggler {
     display: inline-block;
     width: 100%;
     text-align: right;
+    font-size: 19px;
     color: #fb9c06;
     margin: auto auto 25px;
   }
 
-  &__input:checked~&__content {
+  &__input--open:checked ~ &__content {
     max-height: 100vh;
     transition: 1s;
   }
 
-  &__input {
+  &__input--open:checked ~ &__toggler--open {
+    display: none;
+    }
+
+  &__input--close:checked ~ &__toggler--close {
     display: none;
   }
 }
@@ -176,6 +186,10 @@ body * {
 input[type="text" i] {
   background-color: rgba(231, 228, 228, 0.418);
   border: 0px;
+}
+
+.typeform_input {
+  font-size: 25px;
 }
 
 #message {
