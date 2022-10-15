@@ -8,16 +8,16 @@ body * {
   max-width: 940px;
 }
 
-.header {
-  width: 100%;
-  max-width: 620px;
+.leftblock {
+  width: 620px;
 }
 
 .main-menu {
   width: 100%;
-  max-width: 620px;
   margin: 0 0 23px;
   background-color: #D9D9D9;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
 
   & .hotnews {
     padding-right: 15px;
@@ -37,7 +37,6 @@ body * {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 620px;
   border-bottom: 5px solid red;
 }
 
@@ -67,18 +66,34 @@ body * {
   text-align: justify;
 }
 
-.news-line {}
-
-.news-line-title {
-  font-size: 24px;
-  font-family: 'PT Sans', sans-serif;
+.news-line {
+  width: 100%;
 }
 
-.news-line-container {}
+.news-line-title {
+  margin: 0 auto;
+  font-size: 24px;
+  font-family: 'PT Sans', sans-serif;
 
-.news-line-image {}
+}
 
-.news-line-discription {}
+.newsline-container {
+  display: flex;
+  justify-content: space-around;
+
+& .block {
+  width: 142px;
+}
+
+& .newsline-discription {
+  margin: 0 auto;
+  font-size: 14px;
+  }
+}
+
+
+
+
 
 .video-vertical {}
 
