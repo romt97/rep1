@@ -6,12 +6,25 @@ body * {
   display: flex;
   margin: 0 auto;
   max-width: 940px;
+  height: 100%;
 }
 
 .leftblock {
-  width: 620px;
+  width: 100%;
+  min-width: 620px;
+  margin-right: 20px;
 }
 
+.rightblock {
+  margin-right: 20px;
+  min-width: 300px;
+  max-width: 300px;
+
+
+.footernews {
+  margin-top: 35px;
+  width: 940px;
+}
 .main-menu {
   width: 100%;
   margin: 0 0 23px;
@@ -90,17 +103,3 @@ body * {
   font-size: 14px;
   }
 }
-
-
-
-
-
-.video-vertical {}
-
-.videocontainer {}
-
-.video-vertical-title {}
-
-.videopreview {}
-
-.video-description {}
