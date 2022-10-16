@@ -2,6 +2,39 @@ body * {
   outline: 1px dashed rgb(150, 149, 149);
 }
 
+.content {
+  margin: 0 auto;
+  width: 975px;
+  outline: 1px dashed rgb(247, 6, 6);
+}
+
 .maincontent {
+  outline: 2px solid rgb(147, 253, 8);
   width: 940px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.headermenu {
+  width: 100%;
+  max-width: 940px;
+  grid-area: headermenu;
+  outline: 2px solid rgb(12, 8, 253);
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+
+& .hotnews {
+    background-color: #333333;
+    color: #fff;
+    margin-right:10px;
+    padding: 3px 18px;
+  }
+}
+
+.block__three {
+  margin-right: 230px;
 }
