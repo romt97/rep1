@@ -1,11 +1,10 @@
 body * {
-  outline: 1px dashed rgb(150, 149, 149);
+  outline: 1px solid rgb(150, 149, 149);
 }
 
 .content {
   margin: 0 auto;
   width: 975px;
-  outline: 1px dashed rgb(247, 6, 6);
 }
 
 .maincontent {
@@ -19,7 +18,6 @@ body * {
   width: 100%;
   max-width: 940px;
   grid-area: headermenu;
-  outline: 2px solid rgb(12, 8, 253);
   margin-top: 30px;
   display: flex;
   flex-direction: row;
@@ -33,6 +31,10 @@ body * {
     margin-right:10px;
     padding: 3px 18px;
   }
+}
+
+.headermenu a {
+text-decoration: none;
 }
 
 .block__three {
