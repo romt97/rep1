@@ -79,12 +79,24 @@ body * {
   width: 377px;
   height: 250px;
   border-bottom: 5px solid red;
+  float: left;
 }
+
 .slider__text {
   display: flex;
   flex-direction: column;
+  width: 244px;
+  overflow: hidden;
 
-  & .text1 {}
+  & .text1 {
+    display: flex;
+    font-size: 30pt;
 
-  & .text2 {}
+  }
+
+  & .text2 {
+    display: flex;
+    font-size: 14pt;
+
+  }
 }
