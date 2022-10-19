@@ -71,28 +71,28 @@ body * {
 }
 
 .slider {
+  display: flex;
   width: 73%;
   margin-top: 20px
 }
 
-.slider>.image {
-
-  width: 100%;
+.slider > .image {
   max-width: 376px;
 }
 
 .slidertext {
+display: flex;
 
 
-  & .text1 {
-    width: 40%;
-    font-size: 30pt;
-  }
+& .text1 {
+  width: 40%;
+  font-size: 30pt;
+}
 
-  & .text2 {
-    width: 40%;
-    font-size: 14pt;
-  }
+& .text2 {
+  width: 40%;
+  font-size: 14pt;
+}
 }
 
 .newsline {
@@ -102,13 +102,13 @@ body * {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: baseline;
-  }
+}
 
-.box1, 
-.box2, 
-.box3, 
-.box4 > p {
-    display: flex;
+.box1,
+.box2,
+.box3,
+.box4>p {
+  display: flex;
   flex-direction: column;
   column-gap: 18px;
   flex-wrap: nowrap;
