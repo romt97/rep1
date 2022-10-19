@@ -72,27 +72,31 @@ body * {
 
 .slider {
   display: flex;
+  flex-direction: row;
   width: 73%;
-  margin-top: 20px
-}
+  height: 235px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  }
 
-.slider > .image {
+.sliderimage {
   max-width: 376px;
 }
 
 .slidertext {
-display: flex;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
+  & .text1 {
+    margin: 20px 0px 18px 0px;
+    font-size: 30pt;
+  }
 
-& .text1 {
-  width: 40%;
-  font-size: 30pt;
-}
-
-& .text2 {
-  width: 40%;
-  font-size: 14pt;
-}
+  & .text2 {
+    font-size: 14pt;
+  }
 }
 
 .newsline {
