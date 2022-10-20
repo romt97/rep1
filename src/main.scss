@@ -2,6 +2,11 @@ body * {
   outline: 1px solid lightgrey;
 }
 
+a, a:visited: {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:focus, a:active {outline: none;}
+
+
 .maincontent {
   width: 100%;
   max-width: 940px;
@@ -106,6 +111,10 @@ body * {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: baseline;
+}
+
+.newsline > span {
+  
 }
 
 .box1,
