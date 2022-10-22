@@ -7,7 +7,8 @@ a {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -255,9 +256,12 @@ a {
 
 
 .rightborder {
+  display: block;
   padding: 0px 5px;
   margin-top: 30px;
   width: 100%;
+  min-width: 299px;
+
 }
 
 .footer-news {
@@ -269,7 +273,8 @@ a {
   display: flex;
 }
 
+
 .footernews_title {
   margin-top: 31px;
-  width: 940px;
+  // width: 940px;
 }
