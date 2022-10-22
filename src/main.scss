@@ -2,8 +2,11 @@ body * {
   outline: 1px solid lightgrey;
 }
 
-a,
-a:visited: {
+a {
+  text-decoration: none;
+}
+
+a:visited {
   text-decoration: none;
 }
 
