@@ -12,6 +12,7 @@ a {
 }
 
 .maincontent {
+  display: flex;
   width: 100%;
   max-width: 940px;
   margin: 0 auto;
@@ -23,8 +24,7 @@ a {
 }
 
 .header__menu {
-  width: 940px;
-  min-width: 940px;
+  width: 100%;
   min-height: 33px;
   margin-top: 30px;
   display: flex;
@@ -236,4 +236,10 @@ a {
     float: left;
     margin-right: 3px;
   }
+}
+
+.rightborder {
+  padding: 0px 5px;
+  margin-top: 30px;
+  width: 100%;
 }
