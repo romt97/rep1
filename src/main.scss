@@ -19,7 +19,10 @@ a:active {
   outline: none;
 }
 
-
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
 .maincontent {
   width: 100%;
   max-width: 940px;
