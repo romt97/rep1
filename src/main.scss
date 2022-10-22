@@ -6,19 +6,6 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:focus,
-a:active {
-  outline: none;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -103,7 +90,7 @@ a:active {
   display: flex;
   height: 235px;
   margin-top: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .slidertext {
@@ -147,12 +134,106 @@ a:active {
 
   & p {
     margin-top: 5px;
-    margin-botom: 0px;
+    margin-bottom: 0px;
     font-family: 'PT Sans';
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     letter-spacing: -0.01em;
     color: #333333;
+  }
+}
+
+.slider-second {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+
+.column1 {
+  margin-right: 23px;
+  width: 100%;
+  max-width: 378px;
+
+}
+
+.column2 {
+  width: 100%;
+  max-width: 220px;
+}
+
+.newsline-title p {
+  margin-bottom: 9px;
+  font-family: 'PT Sans';
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #333333;
+}
+
+.lastnews-title p {
+  margin-top: 0px;
+  margin-bottom: 11px;
+  font-family: 'PT Sans';
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #3d76cc;
+}
+
+.lastnews-news {
+  & ul {
+    padding-left: 15px;
+  }
+
+  & li {
+  font-family: 'PT Sans';
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    color: #333333;
+  }
+}
+
+.newsfeed-titlee p {
+  margin-bottom: 12px;
+  font-family: 'PT Sans';
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #3d76cc;
+}
+
+.newsfeed {
+  & .newsfeen__mainnews {
+    display: inline-block;
+  }
+
+  & span {
+    display: flex;
+    font-weight: bold;
+  }
+
+  & ul {
+    padding-left: 15px;
+  }
+
+  & li {
+    font-family: 'PT Sans';
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: 400;
+      letter-spacing: -0.025em;
+      color: #333333;
+    }
+
+  & img {
+    float: left;
+    margin-right: 3px;
   }
 }
