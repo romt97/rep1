@@ -3,13 +3,8 @@
 @import "./sprites.scss";
 @import "./partials/menu-item/menu-item.scss";
 
-// body * {
-//   outline: 1px solid lightgrey;
-// }
-
-.container {
-  max-width: 1220px;
-  margin: 0 auto;
+body * {
+  outline: 1px solid lightgrey;
 }
 
 .header {
@@ -17,38 +12,35 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 0;
+  column-gap: 67px;
 }
 
 .main-menu {
   display: flex;
-  column-gap: 67px;
+
 }
 
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+
+
 .slider {
+  margin: 0 auto;
   background-color: tomato;
-}
-
-.footer {
-  background-color: #fb9c06;
-}
-
-.footer-content {
-  padding: 20px 0 25px;
-  text-align: center;
-  color: #fff;
-  font-size: 40px;
-  text-transform: uppercase;
-}
-
-.slider {
   background-image: url("./img/slider-background.png");
   background-size: cover;
   height: 400px;
+  width: 100%;
+  max-width: 2500px;
   border-top: 5px solid #fb9c06;
   border-bottom: 5px solid #fb9c06;
 }
 
 .slider-content {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -71,12 +63,10 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  max-width: 1229px;
 }
 
 .accordeon {
   width: 265px;
-  max-width: 1229px;
 
   input {
     display: none;
@@ -114,7 +104,7 @@
   }
 }
 
-.meattheteam {
+.title{
   text-align: center;
   font-size: 40px;
   color: #fb9c06;
@@ -127,7 +117,6 @@
 }
 
 .animals {
-  max-width: 1220px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -157,16 +146,6 @@
   max-width: 225px;
   font-size: 20px;
   margin: 0 auto;
-}
-
-.message-head p {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  color: #fb9c06;
-  text-decoration: underline;
-  font-weight: bold;
 }
 
 .message-box {
@@ -211,4 +190,19 @@ input[type="text" i] {
   border-radius: 3px;
   color: #fff;
   margin: 15px 10px;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 2500px;
+  background-color: #fb9c06;
+}
+
+.footer-content {
+  padding: 20px 0 25px;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
 }
