@@ -12,12 +12,11 @@ body * {
   justify-content: space-between;
   align-items: center;
   padding: 5px 0;
-  column-gap: 67px;
 }
 
 .main-menu {
   display: flex;
-
+  column-gap: 67px;
 }
 
 .container {
