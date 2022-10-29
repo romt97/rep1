@@ -7,14 +7,59 @@ a {
 }
 
 .container {
-  width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 2540px;
 }
 
 .maincontent {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1800px;
+}
+
+.main-menu {
   display: flex;
   width: 100%;
-  max-width: 940px;
-  margin: 0 auto;
+  height: 20%;
+  border: 1px solid gray;
 }
+
+.logo img {
+  display: flex;
+  width: 200px;
+  }
+
+.menuitem {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+// background-color: black;
+
+.contact {
+  // display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 20px;
+}
+
+& ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 30px;
+  }
+
+& a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+& a:hover {
+  border-bottom: 5px solid rgb(238, 255, 0);
+}
+
+}
+
+
