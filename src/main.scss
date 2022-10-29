@@ -2,4 +2,19 @@ body * {
   outline: 1px solid lightgrey;
 }
 
+a {
+  text-decoration: none;
+}
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.maincontent {
+  display: flex;
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+}
