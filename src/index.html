@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./main.scss">
   <title>News</title>
+  <script src="https://kit.fontawesome.com/22978397b1.js" crossorigin="anonymous"></script>
   <script src="./js/main.js" defer></script>
 </head>
 
@@ -85,8 +86,12 @@
                   <div>
                     <img src="../src/img/newsfeed/newsfeed1.png" alt="nefsfeed-image">
                   </div>
-                  <span> Zlatan Ibrahimovic on target as Sweden qualify
-                    with draw in Denmark</span>
+                  <span> 
+                    @@include('./partials/text-with-icon/_text-wuth-icon.html', {
+                    "text": "Zlatan Ibrahimovic on target as Sweden qualify with draw in Denmark"
+                    "icons": "camera video"
+                  })
+                  </span>
                 </div>
                 <div class="newsfeen__listnews">
                   <ul>
@@ -172,6 +177,7 @@
         </div>
       </div>
     </div>
+    <i class="fa-sharp fa-solid fa-circle-camera"></i>
   </div>
 
     
