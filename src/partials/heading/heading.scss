@@ -1,0 +1,29 @@
+@import "../../color.scss";
+
+.heading {
+    display: flex;
+    align-items: baseline;
+
+    &.primary {
+        color: $highlight;
+    }
+
+    &:after {
+        content: "";
+        border-bottom: 2px solid #c80000;
+        display: block;
+        flex: 1 0 auto ;
+        margin-left: 10px;
+    }
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 11px;
+    font-family: 'PT Sans';
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    color: #3d76cc;
+}
