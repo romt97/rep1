@@ -1,13 +1,20 @@
 .text-with-icon {
-    &.camera {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 5px;
+    flex-direction: row;
+    flex-wrap: nowrap;
 
+    &.camera:after {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        content: "\f030";
     }
 
-    &.video {
-
-    }
-    
-    &.camera.video {
-        
+    &.video:before {
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 900;
+        content: "\f167";
+        order: 3;
     }
 }

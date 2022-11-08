@@ -215,20 +215,7 @@ a {
   }
 }
 
-.newsfeed-titlee p {
-  margin-bottom: 12px;
-  font-family: 'PT Sans';
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  color: #3d76cc;
-}
-
 .newsfeed {
-  & .newsfeen__mainnews {
-    display: inline-block;
-  }
 
   & span {
     display: flex;
@@ -236,6 +223,7 @@ a {
   }
 
   & ul {
+    margin-top: 25px;
     padding-left: 15px;
   }
 
@@ -254,7 +242,9 @@ a {
   }
 }
 
-
+.newsfeen__mainnews span {
+  display: block;
+}
 
 .rightborder {
   display: block;
