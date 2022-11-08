@@ -9,6 +9,7 @@
         font-family: "Font Awesome 6 Free";
         font-weight: 900;
         content: "\f030";
+        color: #333333;
     }
 
     &.video:before {
@@ -16,5 +17,6 @@
         font-weight: 900;
         content: "\f167";
         order: 3;
+        color: #333333;
     }
 }
