@@ -1,0 +1,41 @@
+.image-with-icon {
+    position: relative;
+    font-size: 20px;
+
+    &__img {
+        min-width: 100%;
+        min-height: 100%;
+        &:before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+        }
+    }
+
+    &.camera:after {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        content: "\f030";
+        font-style: normal;
+        color: red;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        font-size: 1em;
+    }
+
+    &.camera:before {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        content: "\f030";
+        font-style: normal;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        bottom: 9px;
+        left: 9px;
+        font-size: 1.1em;
+        font-weight: 900;
+        background: radial-gradient(circle, #fff 0, #fff 32%, transparent 33%, transparent 100%);
+    }
+} 
