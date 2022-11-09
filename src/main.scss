@@ -259,10 +259,8 @@ a {
 }
 
 .footer-news {
-  left: 140px;
-  width: 100%;
-  margin: 0 auto;
   display: flex;
+  
 }
 
 .footer-news>img {
@@ -287,9 +285,11 @@ a {
 }
 
 .footer-news>.box1 {
-  filter: blur(3px);
+  overflow: hidden;
+  filter: blur(2px);
 }
 
 .footer-news>.box7 {
-  filter: blur(3px);
+  overflow: hidden;
+  filter: blur(2px);
 }
