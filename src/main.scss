@@ -220,7 +220,7 @@ a {
 
   & span {
     display: flex;
-    font-weight: bold;
+    // font-weight: bold;
   }
 
   & ul {
@@ -247,13 +247,15 @@ a {
   display: block;
 }
 
+.newsfeed_title {
+  font-weight: bold;
+}
 .rightborder {
   display: block;
   padding: 0px 5px;
   margin-top: 30px;
   width: 100%;
   min-width: 299px;
-
 }
 
 .footer-news {
