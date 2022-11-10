@@ -289,6 +289,44 @@ a {
   max-width: 299px;
 }
 
+.videotitle {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 18px;
+  font-family: "PT Sans";
+  color: rgb(106, 0, 153);
+  font-weight: bold;
+
+
+  &.videotitle span {
+    position: relative;
+  }
+
+  &.videotitle>span::before {
+    display: block;
+    width: 100px;
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 55px;
+    border-bottom: 3px solid #000;
+  }
+
+  &.videotitle>span::after {
+    display: block;
+    width: 100px;
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -107px;
+    border-bottom: 3px solid #000;
+  }
+}
+
+
 .videoblock {
   display: flex;
   flex-direction: column;
@@ -309,7 +347,7 @@ a {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: flex-start;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .videoinfo {
@@ -389,4 +427,26 @@ a {
 .footer-news>.box7 {
   overflow: hidden;
   filter: blur(2px);
+}
+
+.feedback {
+  width: 115px;
+  height: 35px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5%;
+  border-color: #fff;
+  transform: rotate(-90deg);
+  position: fixed;
+  right: 42px;
+  top: 50px;
+
+
+  &__button {
+    padding: 3px;
+    color: rgb(245, 245, 245);
+    font-weight: bold;
+  }
 }

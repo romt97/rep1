@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <main>
   <div class="container">
     <div class="maincontent">
       <div class="leftborder">
@@ -165,11 +166,8 @@
       </div>
       <div class="rightborder">
         <div class="video">
-          <div class="rb-videotitle">
-          @@include('./partials/heading/_heading.html', {
-          "type": "tertiary",
-          "text": "Видео"
-          })
+          <div class="videotitle"> 
+            <span> Видео </span>
         </div>
         <div class="videoblock">
           <div class="videobox">
@@ -300,6 +298,12 @@
   </div>
   </div>
   </div>
+</main>
+<div class="feedback">
+  <button class="feedback__button">
+    Обратная связь
+  </button>
+</div>
 </body>
 
 </html>
