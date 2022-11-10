@@ -160,10 +160,36 @@
         </div>
       </div>
       <div class="rightborder">
-        @@include('./partials/text-with-icon/_text-with-icon.html', {
-          "text": "Test text", 
-          "icons": "camera video"
-        })
+        <div class="rb-videotitle">
+          @@include('./partials/heading/_heading.html', {
+            "type": "secondary", 
+            "text": "Видео"
+          })
+        </div>
+        <div class="videoblock">
+          <span class="videobox"> Фильм дня: Гитлер Капут!
+            @@include('./partials/image-with-icon2/_image-with-icon2.html' {
+              "icons": "camera",
+              "path": "./img/rbvertical/rb-v-image1.png"
+            })
+          </span>
+          <span class="videobox"> Ксения Собчак беременна
+            @@include('./partials/image-with-icon2/_image-with-icon2.html' {
+              "icons": "camera",
+              "path": ".//img/rbvertical/rb-v-image2.png"
+            })
+          </span>
+          <span class="videobox1"> Группа парней избила влюбленную пару бейсбольной битой
+            <img src="../src/img/newsline/1.jpg" alt="image1">
+          </span>
+          <span class="videobox1"> Небесные ласточки: двухсерийная музыкальная комедия
+            <img src="../src/img/newsline/1.jpg" alt="image1">
+          </span>
+          <span class="videobox1"> На дополнительном кастинге "Хочу в ВИА Гру" девушек просили
+            <img src="../src/img/newsline/1.jpg" alt="image1">
+          </span>
+          <a href="#">Больше видео</a>
+        </div>
       </div>
       </div>
     <div class="footer">  

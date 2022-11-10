@@ -1,6 +1,7 @@
 @import "./partials/heading/heading.scss";
 @import "./partials/text-with-icon/text-with-icon.scss";
 @import "./partials/image-with-icon/image-with-icon.scss";
+@import "./partials/image-with-icon2/image-with-icon2.scss";
 
 body * {
   outline: 1px solid lightgrey;
@@ -220,7 +221,6 @@ a {
 
   & span {
     display: flex;
-    // font-weight: bold;
   }
 
   & ul {
@@ -254,8 +254,27 @@ a {
   display: block;
   padding: 0px 5px;
   margin-top: 30px;
+  margin-left: 15px;
   width: 100%;
-  min-width: 299px;
+  max-width: 299px;
+}
+
+.videoblock {
+  display: flex;
+  flex-direction: column;
+
+  & span {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  & img {
+    width: 138px;
+    height: 88px;
+    margin-right: 15px;
+  }
 }
 
 .footer-news {
