@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./main.scss">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>News</title>
   <script src="https://kit.fontawesome.com/22978397b1.js" crossorigin="anonymous"></script>
   <script src="./js/main.js" defer></script>
@@ -34,13 +34,18 @@
             <span class="text1">Jurgen Klopp makes a sexy Liverpool</span>
             <span class="text2">Liverpool outcast Jose Enrique set to be handed lifeline by
               Jurgen Klopp</span>
-              
+            <span class="photo__quantity">
+              <i class="fa-solid fa-chevron-left arrow"></i>
+              <span class="quantity-text">7/20</span>
+              <i class="fa-solid fa-chart-pie quantity"></i>
+              <i class="fa-solid fa-chevron-right arrow"></i>
+            </span>
           </div>
         </div>
         <div class="newsline-title">
           @@include('./partials/heading/_heading.html', {
-            "type": "secondary", 
-            "text": "Main News"
+          "type": "secondary",
+          "text": "Main News"
           })
         </div>
         <div class="newsline">
@@ -59,10 +64,10 @@
           <span class="box4">
             <img src="../src/img/newsline/4.jpg" alt="image1">
             <p>
-               @@include('./partials/text-with-icon/_text-with-icon.html', {
-                "text": "Ribery got vase!",
-                "icons": "camera"
-               })
+              @@include('./partials/text-with-icon/_text-with-icon.html', {
+              "text": "Ribery got vase!",
+              "icons": "camera"
+              })
             </p>
           </span>
         </div>
@@ -71,8 +76,8 @@
             <div class="lastnews">
               <div class="lastnews-title">
                 @@include('./partials/heading/_heading.html', {
-                  "type": "primary", 
-                  "text": "Last News"
+                "type": "primary",
+                "text": "Last News"
                 })
               </div>
               <div class="lastnews-news">
@@ -85,8 +90,8 @@
                   <li>"They intended to set off an explosive inside the stadium" - eyewitness</li>
                   <li>
                     @@include('./partials/text-with-icon/_text-with-icon.html', {
-                      "text": "Raúl bids goodbye in style", 
-                      "icons": "camera video"
+                    "text": "Raúl bids goodbye in style",
+                    "icons": "camera video"
                     })
                   </li>
                   <li>Five reasons Belgium vs. Spain was called off</li>
@@ -98,8 +103,8 @@
             <div class="newsfeed">
               <div class="newsfeed-titlee">
                 @@include('./partials/heading/_heading.html', {
-                  "type": "primary", 
-                  "text": "Newsfeed"
+                "type": "primary",
+                "text": "Newsfeed"
                 })
               </div>
               <div class="newsfeed-news">
@@ -108,11 +113,11 @@
                     <img src="../src/img/newsfeed/newsfeed1.png" alt="nefsfeed-image">
                   </div>
                   <span class="newsfeed_title">
-                  @@include('./partials/text-with-icon/_text-with-icon.html', {
-                    "text": "Zlatan Ibrahimovic on target as Sweden qualify with draw in Denmark", 
+                    @@include('./partials/text-with-icon/_text-with-icon.html', {
+                    "text": "Zlatan Ibrahimovic on target as Sweden qualify with draw in Denmark",
                     "icons": "camera"
-                  })
-                </span>
+                    })
+                  </span>
                 </div>
                 <div class="newsfeen__listnews">
                   <ul>
@@ -120,10 +125,10 @@
                     </li>
                     <li>
                       @@include('./partials/text-with-icon/_text-with-icon.html', {
-                        "text": "Ecuador stay perfect as Argentina, Brazil win", 
-                        "icons": "video"
-                    })
-                  </li>
+                      "text": "Ecuador stay perfect as Argentina, Brazil win",
+                      "icons": "video"
+                      })
+                    </li>
                     <li>Sweden, Ukraine complete Euro line-up fifa.com</li>
                     <li>Aubameyang penalty gives Gabon World Cup joy</li>
                   </ul>
@@ -135,22 +140,22 @@
             <div class="vertical-news">
               <span class="box1">
                 @@include('./partials/image-with-icon/_image-with-icon.html', {
-                  "icons": "camera", 
-                  "path": "./img/vertical-news/vertical_news_image_1.png"
-                }) 
+                "icons": "camera",
+                "path": "./img/vertical-news/vertical_news_image_1.png"
+                })
                 <p>Here is how Leage Champions trophy looks like</p>
               </span>
               <span class="box2">
                 @@include('./partials/image-with-icon/_image-with-icon.html', {
-                  "icons": "camera", 
-                  "path": "./img/vertical-news/vertical_news_image_2.png"
+                "icons": "camera",
+                "path": "./img/vertical-news/vertical_news_image_2.png"
                 })
                 <p>Casillas got some piece of paper</p>
               </span>
               <span class="box1">
                 @@include('./partials/image-with-icon/_image-with-icon.html', {
-                  "icons": "camera", 
-                  "path": "./img/vertical-news/vertical_news_image_3.png"
+                "icons": "camera",
+                "path": "./img/vertical-news/vertical_news_image_3.png"
                 })
                 <p>Bayern Munich vs Barcelona. Fangirls :)</p>
               </span>
@@ -159,17 +164,18 @@
         </div>
       </div>
       <div class="rightborder">
-        <div class="rb-videotitle">
+        <div class="video">
+          <div class="rb-videotitle">
           @@include('./partials/heading/_heading.html', {
-            "type": "secondary", 
-            "text": "Видео"
+          "type": "tertiary",
+          "text": "Видео"
           })
         </div>
         <div class="videoblock">
           <div class="videobox">
             @@include('./partials/image-with-icon/_image-with-icon.html', {
-              "icons": "video", 
-              "path": "./img/rbvertical/rbimage1.jpg"
+            "icons": "video",
+            "path": "./img/rbvertical/rbimage1.jpg"
             })
             <div class="videoinfo">
               Фильм дня: Гитлер Капут!
@@ -177,8 +183,8 @@
           </div>
           <div class="videobox">
             @@include('./partials/image-with-icon/_image-with-icon.html', {
-              "icons": "video", 
-              "path": "./img/rbvertical/rbimage2.jpg"
+            "icons": "video",
+            "path": "./img/rbvertical/rbimage2.jpg"
             })
             <div class="videoinfo">
               Ксения Собчак беременна
@@ -186,8 +192,8 @@
           </div>
           <div class="videobox">
             @@include('./partials/image-with-icon/_image-with-icon.html', {
-              "icons": "video", 
-              "path": "./img/rbvertical/rbimage3.jpg"
+            "icons": "video",
+            "path": "./img/rbvertical/rbimage3.jpg"
             })
             <div class="videoinfo">
               Группа парней избила влюбленную пару бейсбольной битой!
@@ -195,8 +201,8 @@
           </div>
           <div class="videobox">
             @@include('./partials/image-with-icon/_image-with-icon.html', {
-              "icons": "video", 
-              "path": "./img/rbvertical/rbimage4.jpg"
+            "icons": "video",
+            "path": "./img/rbvertical/rbimage4.jpg"
             })
             <div class="videoinfo">
               Небесные ласточки: двухсерийная музыкальная комедия
@@ -204,8 +210,8 @@
           </div>
           <div class="videobox">
             @@include('./partials/image-with-icon/_image-with-icon.html', {
-              "icons": "video", 
-              "path": "./img/rbvertical/rbimage5.jpg"
+            "icons": "video",
+            "path": "./img/rbvertical/rbimage5.jpg"
             })
             <div class="videoinfo">
               На дополнительном кастинге "Хочу в ВИА Гру" девушек просили снять бюстгальтер
@@ -214,53 +220,86 @@
           <a href="#">Больше видео &rarr;</a>
         </div>
       </div>
-      </div>
-    <div class="footer">  
-      <div class="footernews_title">
-        @@include('./partials/heading/_heading.html', {
-          "type": "secondary", 
-          "text": "Обзор"
-        })
-      </div>
-      <div class="footer-news">
-        <div class="box1">
-          <p class="box-title">Приколы</p>
-          <img src="../src/img/footer-news/image/footer-news_image_1.jpg" alt="image1">
-          <p class="box-text">Отношения актеров в кино и в реальной жизни</p>
-        </div>
-        <div class="box2">
-          <p class="box-title">Знакомства</p>
-          <img src="../src/img/footer-news/image/footer-news_image_2.png" alt="image2">
-          <p class="box-text">Отношения актеров в кино и в реальной жизни</p>
-        </div>
-        <div class="box3">
-          <p class="box-title">Знакомства</p>
-          <img src="../src/img/footer-news/image/footer-news_image_3.png" alt="image3">
-          <p class="box-text">Отношения актеров в кино и в реальной жизни</p>
-        </div>
-        <div class="box4">
-          <p class="box-title">Знакомства</p>
-          <img src="../src/img/footer-news/image/footer-news_image_4.png" alt="image4">
-          <p class="box-text">Отношения актеров в кино и в реальной жизни</p>
-        </div>
-        <div class="box5">
-          <p class="box-title">Приколы</p>
-          <img src="../src/img/footer-news/image/footer-news_image_5.png" alt="image5">
-          <p class="box-text">Отношения актеров в кино и в реальной жизни</p>
-        </div>
-        <div class="box6">
-          <p class="box-title">Авто</p>
-          <img src="../src/img/footer-news/image/footer-news_image_6.png" alt="image6">
-          <p class="box-text">Отношения актеров в кино и в реальной жизни</p>
-        </div>
-        <div class="box7">
-          <p class="box-title">Знакомства</p>
-          <img src="../src/img/footer-news/image/footer-news_image_7.png" alt="image7">
-          <p class="box-text">Отношения актеров в кино и в реальной жизни</p>
+      <div class="articles"> Интересные статьи
+        <div class="articles__content">
+          <span class="article-box">
+            <img src="../src/img/article-img/article-img1.jpg" alt="image1">
+            <span class="article__discription"> Испанский политик полностью оделась для глянца</span>
+          </span>
+          <span class="article-box">
+            <img src="../src/img/article-img/article-img2.jpg" alt="image1">
+            <span class="article__discription"> 
+              @@include('./partials/text-with-icon/_text-with-icon.html', {
+                "text": "Анджелина Джоли сильно похудела",
+                "icons": "camera"
+                })
+            </span>
+          </span>
+          <span class="article-box">
+            <img src="../src/img/article-img/article-img3.jpg" alt="image1">
+            <span class="article__discription"> Исполнить мечту и умереть: История 14-летней девочки...</span>
+          </span>
+          <span class="article-box">
+            <img src="../src/img/article-img/article-img4.jpg" alt="image1">
+            <span class="article__discription"> Ирина Билык сказала, что думает о повзрослевшей Алине...</span>
+          </span>
+          <span class="article-box">
+            <img src="../src/img/article-img/article-img5.jpg" alt="image1">
+            <span class="article__discription">  7 "смертных грехов": чего нельзя делать в отношениях</span>
+          </span>
         </div>
       </div>
-    </div>
     </div>
   </div>
+  </div>
+  </div>
+  <div class="footer">
+    <div class="footernews_title">
+      @@include('./partials/heading/_heading.html', {
+      "type": "secondary",
+      "text": "Обзор"
+      })
+    </div>
+    <div class="footer-news">
+      <div class="box1">
+        <p class="box-title">Приколы</p>
+        <img src="../src/img/footer-news/image/footer-news_image_1.jpg" alt="image1">
+        <p class="box-text">Отношения актеров в кино и в реальной жизни</p>
+      </div>
+      <div class="box2">
+        <p class="box-title">Знакомства</p>
+        <img src="../src/img/footer-news/image/footer-news_image_2.png" alt="image2">
+        <p class="box-text">Отношения актеров в кино и в реальной жизни</p>
+      </div>
+      <div class="box3">
+        <p class="box-title">Знакомства</p>
+        <img src="../src/img/footer-news/image/footer-news_image_3.png" alt="image3">
+        <p class="box-text">Отношения актеров в кино и в реальной жизни</p>
+      </div>
+      <div class="box4">
+        <p class="box-title">Знакомства</p>
+        <img src="../src/img/footer-news/image/footer-news_image_4.png" alt="image4">
+        <p class="box-text">Отношения актеров в кино и в реальной жизни</p>
+      </div>
+      <div class="box5">
+        <p class="box-title">Приколы</p>
+        <img src="../src/img/footer-news/image/footer-news_image_5.png" alt="image5">
+        <p class="box-text">Отношения актеров в кино и в реальной жизни</p>
+      </div>
+      <div class="box6">
+        <p class="box-title">Авто</p>
+        <img src="../src/img/footer-news/image/footer-news_image_6.png" alt="image6">
+        <p class="box-text">Отношения актеров в кино и в реальной жизни</p>
+      </div>
+      <div class="box7">
+        <p class="box-title">Знакомства</p>
+        <img src="../src/img/footer-news/image/footer-news_image_7.png" alt="image7">
+        <p class="box-text">Отношения актеров в кино и в реальной жизни</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
 </body>
+
 </html>
