@@ -2,13 +2,12 @@
 @import "./partials/text-with-icon/text-with-icon.scss";
 @import "./partials/image-with-icon/image-with-icon.scss";
 @import "./partials/image-with-icon2/image-with-icon2.scss";
-@import "/src/partials/slider/footer-slider.scss"
 
 body * {
-  outline: 1px solid lightgrey;
+  outline: 1px solid lightgray;
 }
 
-*a {
+a * {
   text-decoration: none;
 }
 
@@ -423,31 +422,31 @@ body * {
   background: none;
 }
 
-.slick-track{
+.slick-track {
   display: flex;
   column-gap: 20px;
   max-width: 1200px;
 }
 
-.slidertitle{
-    font-size: 16px;
-    font-family: "PT Sans";
-    color: rgb(199, 0, 0);
-    padding-left: 5px;
-    text-align: center;
-  }
-  
+.slidertitle {
+  font-size: 16px;
+  font-family: "PT Sans";
+  color: rgb(199, 0, 0);
+  padding-left: 5px;
+  text-align: center;
+}
+
 .sliderphoto {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .slide-description {
-    font-size: 16px;
-    font-family: "PT Sans";
-    color: rgb(61, 118, 204);
-    text-align: center;
-  }
+  font-size: 16px;
+  font-family: "PT Sans";
+  color: rgb(61, 118, 204);
+  text-align: center;
+}
 
 .feedback {
   width: 115px;
