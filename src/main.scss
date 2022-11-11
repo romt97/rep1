@@ -398,36 +398,23 @@ a {
   position: relative;
 }
 
-.rev_slider .slickarrow {
-  position: absolute;
-  top: 50%;
-}
-
 .slick-track{
   display: flex;
   column-gap: 20px;
+  max-width: 1200px;
 }
 
-.rev_slider .slickarrow {
+.slick-arrow.slick-prev{
+  z-index: 10;
   position: absolute;
-  top: 50%;
+  left: 0;
 }
-// .slick-arrow.slick-prev{
-//   left: 0;
-//   background-color: lightgray;
-//   border-radius: 50%;
-//   background-size: 15px;
-//   width: 50px;
-//   height: 50px;
-// }
 
-// .slick-arrow.slick-next{
-//   right: 0; 
-//   background-color: lightgray;
-//   border-radius: 50%;
-//   width: 50px;
-//   height: 50px;
-// }
+.slick-arrow.slick-next{
+right: 0;
+position: absolute;
+right: 0;
+}
 
 .slidertitle{
     font-size: 16px;
