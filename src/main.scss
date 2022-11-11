@@ -2,6 +2,7 @@
 @import "./partials/text-with-icon/text-with-icon.scss";
 @import "./partials/image-with-icon/image-with-icon.scss";
 @import "./partials/image-with-icon2/image-with-icon2.scss";
+@import "/src/partials/slider/footer-slider.scss"
 
 body * {
   outline: 1px solid lightgrey;
@@ -393,41 +394,97 @@ a {
   padding-right: 5px;
 }
 
-.footer-news {
-  display: flex;
-
+.rev_slider {
+  position: relative;
 }
 
-.footer-news>img {
+.rev_slider .slickarrow {
+  position: absolute;
+  top: 50%;
+}
+
+.slick-track{
+  display: flex;
   column-gap: 20px;
 }
 
-.box-title {
-  font-family: 'PT Sans';
-  font-size: 14px;
-  line-height: 1.2;
-  font-weight: 400;
-  letter-spacing: -0.025em;
-  color: #c70000;
+.rev_slider .slickarrow {
+  position: absolute;
+  top: 50%;
+}
+// .slick-arrow.slick-prev{
+//   left: 0;
+//   background-color: lightgray;
+//   border-radius: 50%;
+//   background-size: 15px;
+//   width: 50px;
+//   height: 50px;
+// }
+
+// .slick-arrow.slick-next{
+//   right: 0; 
+//   background-color: lightgray;
+//   border-radius: 50%;
+//   width: 50px;
+//   height: 50px;
+// }
+
+.slidertitle{
+    font-size: 16px;
+    font-family: "PT Sans";
+    color: rgb(199, 0, 0);
+    padding-left: 5px;
+    text-align: center;
+  }
+  
+.sliderphoto {
+display: flex;
+flex-direction: column;
 }
 
-.box-text {
-  font-family: 'PT Sans';
-  font-size: 14px;
-  line-height: 1.2;
-  font-weight: 400;
-  color: #3d76cc;
-}
+.slide-description {
+    font-size: 16px;
+    font-family: "PT Sans";
+    color: rgb(61, 118, 204);
+    text-align: center;
+  }
 
-.footer-news>.box1 {
-  overflow: hidden;
-  filter: blur(2px);
-}
 
-.footer-news>.box7 {
-  overflow: hidden;
-  filter: blur(2px);
-}
+// .footer-news {
+//   display: flex;
+
+// }
+
+// .footer-news>img {
+//   column-gap: 20px;
+// }
+
+// .box-title {
+//   font-family: 'PT Sans';
+//   font-size: 14px;
+//   line-height: 1.2;
+//   font-weight: 400;
+//   letter-spacing: -0.025em;
+//   color: #c70000;
+// }
+
+// .box-text {
+//   font-family: 'PT Sans';
+//   font-size: 14px;
+//   line-height: 1.2;
+//   font-weight: 400;
+//   color: #3d76cc;
+// }
+
+// .footer-news>.box1 {
+//   overflow: hidden;
+//   filter: blur(2px);
+// }
+
+// .footer-news>.box7 {
+//   overflow: hidden;
+//   filter: blur(2px);
+// }
 
 .feedback {
   width: 115px;
