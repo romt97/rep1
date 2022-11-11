@@ -5,6 +5,7 @@ $('.rev_slider').slick({
     variableWidth: true,
     prevArrow: "<img src='.//img/tehnics-img/arrow-left.svg' class='prev' alt='1'>",
     nextArrow: "<img src='.//img/tehnics-img/arrow-right.svg' class='next' alt='2'>",
+    verticalSwiping: false,
     responsive: [
         {
             breakpoint: 768,
