@@ -1,8 +1,8 @@
 @import './partials/colors.scss';
 
-// body * {
-//   outline: 1px solid lightgrey;
-// }
+body * {
+  outline: 1px solid lightgrey;
+}
 
 a {
   text-decoration: none;
@@ -106,7 +106,7 @@ input:active,
   font-size: 16px;
 }
 
-.af-form> .af-button {
+#application {
   width: 220px;
   height: 60px;
   font-size: 18px;
@@ -115,9 +115,18 @@ input:active,
   color: #fff;
 }
 
-  .af-button:hover {
-    transform: scale(0.98);
-    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+#reserv {
+  width: 220px;
+  height: 60px;
+  font-size: 18px;
+  background-color: $main-color;
+  border-radius: 100px;
+  color: #fff;
+}
+
+.af-button :hover {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
 .aftitle {
@@ -161,4 +170,60 @@ input:active,
     column-gap: 20px;
     font-size: 17px;
   }
+}
+
+.hotel-room {}
+
+.room-title {
+  margin-bottom: 28px;
+
+}
+
+.rooms-card {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 380px;
+  max-height: 852px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "arial";
+
+  span {
+    margin-left: 28px;
+  }
+}
+
+.title-card {
+  color: $main-color;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+
+  span {
+    color: black;
+    font-weight: bold;
+  }
+}
+
+.discr-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  span {
+    color: #848484;
+  }
+}
+
+.size-room {
+  margin-bottom: 25px;
+}
+
+.size-home {
+  margin-bottom: 65px;
 }
