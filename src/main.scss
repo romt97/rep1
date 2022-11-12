@@ -1,11 +1,18 @@
 @import './partials/colors.scss';
 
-body * {
-  outline: 1px solid lightgrey;
-}
+// body * {
+//   outline: 1px solid lightgrey;
+// }
 
 a {
   text-decoration: none;
+}
+
+input:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
 }
 
 .container {
@@ -99,13 +106,18 @@ a {
   font-size: 16px;
 }
 
-.af-form>button {
+.af-form> .af-button {
   width: 220px;
   height: 60px;
   font-size: 18px;
   background-color: $main-color;
   border-radius: 100px;
   color: #fff;
+}
+
+  .af-button:hover {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
 .aftitle {
@@ -134,7 +146,7 @@ a {
 }
 
 .main-decription {
-  margin: 20px auto;
+  margin: 25px auto;
   display: flex;
   flex-direction: row;
   column-gap: 75px;
@@ -145,8 +157,8 @@ a {
     flex-wrap: nowrap;
     align-items: center;
     word-wrap: break-word;
-    width: 260px;
+    width: 270px;
     column-gap: 20px;
+    font-size: 17px;
   }
-  }
-
+}

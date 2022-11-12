@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./main.scss">
   <title>Main Project</title>
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
   <script src="./js/main.js" defer></script>
 </head>
 
@@ -58,16 +60,18 @@
           <p class="aftitle">Гостиница для кошек с видеонаблюдением</p>
           <p class="afsubtitle">Будьте спокойны за вашего питомца, пока вы в отъезде</p>
           <div class="af-form">
-            <input type="text" placeholder="Имя:___________________">
-            <input type="tel" placeholder="Телефон:_______________">
-            <button class="af-button">Отправить заявку</button>
+            <label for="name"> Имя: </label> <input type="text" placeholder="___________________">
+            <label for="name"> Телефон: </label> <input class="phonenumber" type="tel"
+              placeholder="+7_________________">
+            <input type="button" class="af-button" onclick="buttonClick(this)" value="Отправить заявку">
           </div>
         </div>
         <img class="main-image" src=".//img/logo/main-image.png" alt="main-image">
       </div>
       <div class="main-decription">
         <span>
-          <img src=".//img/logo/foot.png" alt="footimage"> видеонаблюдение в режиме 24/7 и ежедневный фото/видеоотчет в мессенджеры
+          <img src=".//img/logo/foot.png" alt="footimage"> видеонаблюдение в режиме 24/7 и ежедневный фото/видеоотчет в
+          мессенджеры
         </span>
         <span>
           <img src=".//img/logo/foot.png" alt="footimage"> просторные номера с окнами
