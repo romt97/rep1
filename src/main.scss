@@ -89,21 +89,21 @@ body * {
     margin: auto auto 25px;
   }
 
-  &__input--open:checked ~ &__content {
+  &__input--open:checked~&__content {
     max-height: 100vh;
     transition: 1s;
   }
 
-  &__input--open:checked ~ &__toggler--open {
+  &__input--open:checked~&__toggler--open {
     display: none;
-    }
+  }
 
-  &__input--close:checked ~ &__toggler--close {
+  &__input--close:checked~&__toggler--close {
     display: none;
   }
 }
 
-.title{
+.title {
   text-align: center;
   font-size: 40px;
   color: #fb9c06;
@@ -178,6 +178,9 @@ input[type="text" i] {
 
 .button {
   width: max-content;
+  position: relative;
+  left: 820px;
+  bottom: 10px;
 }
 
 .submbutton {
