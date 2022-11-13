@@ -53,6 +53,7 @@ input:active,
     justify-content: space-evenly;
     list-style: none;
     font-size: 30px;
+    font-weight: bold;
   }
 
   & span {
@@ -84,11 +85,15 @@ input:active,
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  background-image: url("/img/logo/main_image.png");
+  background-repeat: no-repeat;
+  background-position: 70% 100%;
 }
 
 .af__title {
   width: 100%;
   max-width: 600px;
+
 }
 
 .main-image {
@@ -179,10 +184,23 @@ input:active,
 .hotel-room {}
 
 .room-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
   margin-top: 100px;
   margin-bottom: 28px;
   font-size: 40px;
 
+  img {
+    margin-left: 200px;
+  }
+
+  span {
+    font-size: 25px;
+    width: 172px;
+    position: relative;
+    right: 19%;
+  }
 }
 
 .rooms-card {
