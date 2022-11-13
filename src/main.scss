@@ -251,3 +251,21 @@ input:active,
 .size-home {
   margin-bottom: 65px;
 }
+
+.galery {
+  display: flex;
+  position: relative;
+  flex-wrap: nowrap;
+}
+
+.slick-track {
+  width: 90%;
+  display: flex;
+  column-gap: 70px;
+  max-width: 1200px;
+}
+
+.slider-mainphoto {
+  width: 480px;
+  height: 532px;
+}
