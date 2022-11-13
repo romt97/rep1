@@ -91,6 +91,10 @@ input:active,
   max-width: 600px;
 }
 
+.main-image {
+  margin-top: 5%;
+}
+
 .af-form {
   width: 240px;
   display: block;
@@ -175,7 +179,9 @@ input:active,
 .hotel-room {}
 
 .room-title {
+  margin-top: 100px;
   margin-bottom: 28px;
+  font-size: 40px;
 
 }
 
