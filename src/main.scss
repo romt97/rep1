@@ -8,9 +8,7 @@ a {
   text-decoration: none;
 }
 
-input:active,
-:hover,
-:focus {
+input:focus {
   outline: 0;
   outline-offset: 0;
 }
@@ -62,6 +60,10 @@ input:active,
     font-style: normal;
     font-size: 13px;
     color: #242424;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 
@@ -266,4 +268,196 @@ input:active,
 .slider-mainphoto {
   width: 480px;
   height: 532px;
+}
+
+.conditions {
+  margin-top: 177px;
+
+  & p {
+    padding-bottom: 76px;
+    border-bottom: 2px solid $main-color;
+    font-family: "Montserrat";
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+}
+
+.conditions-title {
+  margin-bottom: 76px;
+  width: 40%;
+  font-family: Montserrat;
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.conditions-subtitle {
+  padding-top: 41px;
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #848484;
+}
+
+.conditions__blocks {
+  border-bottom: 2px solid $main-color;
+  margin-top: 49px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 177px;
+
+  ul>li {
+    display: block;
+    margin-bottom: 26px;
+    font-family: "Montserrat";
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    list-style: none;
+  }
+}
+
+.eat {
+  margin-top: 51px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid $main-color;
+
+  & p {
+    font-family: Montserrat;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #242424;
+  }
+}
+
+.column-one {
+  width: 50%;
+}
+
+.column-two {
+  width: 50%;
+}
+
+.warning-block {
+  margin-top: 30px;
+  background-image: url("/img/logo/warning-cat.png");
+  background-repeat: no-repeat;
+  background-position: 90% 100%;
+
+  & .warning-title {
+    margin-bottom: 50px;
+    font-family: Montserrat;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #242424;
+  }
+
+  & ul>li {
+    width: 40%;
+    margin-bottom: 26px;
+    font-family: "Montserrat";
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    list-style: none;
+  }
+
+  & img {
+    padding-right: 21px;
+  }
+}
+
+.warning-list ul {
+  padding-left: 0px;
+}
+
+.reservation {
+  width: 100%;
+  margin-top: 172px;
+  background-image: url("/img/logo/reservation-cat.png");
+
+  background-repeat: no-repeat;
+  background-position: 0% 30%;
+
+}
+
+.reservation-title {
+  margin-bottom: 30px;
+  font-family: Montserrat;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #242424;
+}
+
+.reserv-form {
+  margin-right: 10px;
+  max-width: 609px;
+  max-height: 554px;
+  background-color: #fffef1;
+  border-radius: 2%;
+  overflow: hidden;
+  float: right;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 60px;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #848484;
+
+  & .left-column {
+    padding-left: 50px;
+    width: 40%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  & .right-column {
+    width: 40%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  & .row-one {
+    padding-top: 50px;
+  }
+
+  & .row-four {
+    width: 100%;
+    padding-left: 50px;
+  }
+
+  & .reservation-form-button {
+    margin-top: 70px;
+  }
+
+  & input {
+    background-color: #fffef1;
+    border: none;
+    margin-bottom: 5%;
+  }
+
+  & label {
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  & .prim {
+    margin-top: 32px;
+    width: 499px;
+  }
 }
