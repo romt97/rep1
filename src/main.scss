@@ -15,7 +15,7 @@ input:focus {
 }
 
 ul {
-  list-style-image:url('.//img/logo/ellipse.png');
+  list-style-image: url('.//img/logo/ellipse.png');
 }
 
 
@@ -479,3 +479,86 @@ ul {
     width: 499px;
   }
 }
+
+.camera-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 105px;
+}
+
+.camera-title-main {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  color: #242424;
+}
+
+.camera-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #242424;
+  max-width: 450px;
+  margin-right: 120px;
+}
+
+.camera-block {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #242424;
+  max-width: 409px;
+}
+
+.cameras {
+  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -35px;
+}
+
+.cameras a:nth-child(1),
+.cameras a:nth-child(2),
+.cameras a:nth-child(3) {
+  background: none;
+}
+
+.cameras a {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 140px;
+  color: #E36F96;
+  width: 140px;
+  height: 140px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  background: #FAF7F5;
+  border-radius: 80px;
+  margin: 0 35px 54px 0;
+  position: relative;
+}
+
+.cameras a::after {
+    background-image: url("./img/logo/foot2.png");
+    width: 70px;
+    height: 57px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -13px;
+    -webkit-transition: all 0.1s linear 0s;
+    -moz-transition: all 0.1s linear 0s;
+    -o-transition: all 0.1s linear 0s;
+    transition: all 0.1s linear 0s;
+    animation: wobble ease-in-out infinite;
+    animation-duration: 2s;
+  }
