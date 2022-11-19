@@ -1,4 +1,5 @@
 @import './partials/colors.scss';
+@import './partials/fonts.scss';
 
 body * {
   outline: 1px solid lightgrey;
@@ -62,7 +63,7 @@ ul {
 
   & span {
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $main-font;
     font-style: normal;
     font-size: 13px;
     color: #242424;
@@ -149,7 +150,7 @@ ul {
 .aftitle {
   margin-top: 0;
   margin-bottom: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -221,7 +222,7 @@ ul {
   max-height: 852px;
   margin: 0 auto;
   text-align: center;
-  font-family: "arial";
+  font-family: $main-font;
 
   span {
     margin-left: 28px;
@@ -283,7 +284,7 @@ ul {
     padding-bottom: 76px;
     padding-left: 20px;
     border-bottom: 2px solid $main-color;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $main-font;
     font-size: 48px;
     line-height: 1.2;
     font-weight: 400;
@@ -294,7 +295,7 @@ ul {
   margin-bottom: 76px;
   padding-left: 20px;
   width: 40%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font;
   font-size: 26px;
   line-height: 1.2;
   font-weight: 600;
@@ -302,7 +303,7 @@ ul {
 
 .conditions-subtitle {
   padding-top: 41px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font;
   font-size: 20px;
   line-height: 1.2;
   font-weight: 500;
@@ -315,12 +316,12 @@ ul {
   display: flex;
   flex-direction: row;
   column-gap: 177px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font;
 
   ul>li {
     display: list-item;
     margin-bottom: 26px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $main-font;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 400;
@@ -332,7 +333,7 @@ ul {
   display: flex;
   flex-direction: row;
   border-bottom: 2px solid $main-color;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font;
 
   & p {
     font-family: Montserrat;
@@ -340,7 +341,7 @@ ul {
     line-height: 1.2;
     font-weight: 400;
     color: #242424;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $main-font;
   }
 }
 
@@ -358,12 +359,12 @@ ul {
   background-image: url("/img/logo/warning-cat.png");
   background-repeat: no-repeat;
   background-position: 90% 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font;
 
   & .warning-title {
     padding-left: 20px;
     margin-bottom: 50px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $main-font;
     font-size: 24px;
     line-height: 1.2;
     font-weight: 400;
@@ -378,7 +379,7 @@ ul {
     padding-left: 20px;
     width: 40%;
     margin-bottom: 26px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $main-font;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 400;
@@ -390,15 +391,15 @@ ul {
 }
 
 .warning-list ul {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font;
   padding-left: 0px;
 }
 
 .reservation {
   width: 100%;
   margin-top: 172px;
+  font-family: $main-font;
   background-image: url("/img/logo/reservation-cat.png");
-  font-family: 'Montserrat', sans-serif;
   background-repeat: no-repeat;
   background-position: 0% 110%;
 
@@ -406,7 +407,7 @@ ul {
 
 .reservation-title {
   margin-bottom: 30px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font;
   font-size: 48px;
   line-height: 1.2;
   font-weight: 400;
@@ -427,7 +428,7 @@ ul {
   flex-wrap: wrap;
   align-items: center;
   padding-bottom: 60px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 400;
@@ -481,13 +482,15 @@ ul {
 }
 
 .camera-title {
+  padding-left: 20px;
+  margin-top: 152px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 105px;
 }
 
 .camera-title-main {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -496,7 +499,7 @@ ul {
 }
 
 .camera-subtitle {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -507,7 +510,8 @@ ul {
 }
 
 .camera-block {
-  font-family: 'Montserrat', sans-serif;
+  padding-left: 20px;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -523,14 +527,8 @@ ul {
   margin-right: -35px;
 }
 
-.cameras a:nth-child(1),
-.cameras a:nth-child(2),
-.cameras a:nth-child(3) {
-  background: none;
-}
-
 .cameras a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -548,17 +546,110 @@ ul {
 }
 
 .cameras a::after {
-    background-image: url("./img/logo/foot2.png");
-    width: 70px;
-    height: 57px;
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: -13px;
-    -webkit-transition: all 0.1s linear 0s;
-    -moz-transition: all 0.1s linear 0s;
-    -o-transition: all 0.1s linear 0s;
-    transition: all 0.1s linear 0s;
-    animation: wobble ease-in-out infinite;
-    animation-duration: 2s;
-  }
+  background-image: url("./img/logo/foot2.png");
+  width: 70px;
+  height: 57px;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -13px;
+  -webkit-transition: all 0.1s linear 0s;
+  -moz-transition: all 0.1s linear 0s;
+  -o-transition: all 0.1s linear 0s;
+  transition: all 0.1s linear 0s;
+  animation: wobble ease-in-out infinite;
+  animation-duration: 2s;
+}
+
+.cameras a:nth-child(1),
+.cameras a:nth-child(2),
+.cameras a:nth-child(3) {
+  background: none;
+}
+
+.about-us {
+  margin-top: 174px;
+  display: flex;
+  flex-direction: row;
+}
+
+.au-column-one {
+  padding-left: 20px;
+  width: 50%;
+  position: relative;
+  background-image: url("/img/logo/cat-happy.png");
+  background-repeat: no-repeat;
+  background-position: 0% 200%;
+}
+
+.au-column-two {
+  padding-right: 20px;
+  width: 50%;
+}
+
+.au-title {
+  width: 50%;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  color: #242424;
+  margin-bottom: 119px;
+}
+
+.au-title-text {
+  width: 50%;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #242424;
+  max-width: 397px;
+}
+
+.au-ct-text {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #242424;
+  margin-bottom: 64px;
+}
+
+.au-text {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #242424;
+}
+
+.allert-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.allert-title {
+  font-family: $main-font;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #242424;
+}
+
+.allert-text {
+  font-family: $main-font;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #242424;
+}
+
+.allert-block img {
+}
