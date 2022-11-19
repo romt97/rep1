@@ -14,6 +14,11 @@ input:focus {
   outline-offset: 0;
 }
 
+ul {
+  list-style-image:url('.//img/logo/ellipse.png');
+}
+
+
 .container {
   margin: 0 auto;
   max-width: 2540px;
@@ -57,7 +62,7 @@ input:focus {
 
   & span {
     text-decoration: none;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-size: 13px;
     color: #242424;
@@ -144,7 +149,7 @@ input:focus {
 .aftitle {
   margin-top: 0;
   margin-bottom: 20px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -276,8 +281,9 @@ input:focus {
 
   & p {
     padding-bottom: 76px;
+    padding-left: 20px;
     border-bottom: 2px solid $main-color;
-    font-family: "Montserrat";
+    font-family: 'Montserrat', sans-serif;
     font-size: 48px;
     line-height: 1.2;
     font-weight: 400;
@@ -286,8 +292,9 @@ input:focus {
 
 .conditions-title {
   margin-bottom: 76px;
+  padding-left: 20px;
   width: 40%;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   line-height: 1.2;
   font-weight: 600;
@@ -295,7 +302,7 @@ input:focus {
 
 .conditions-subtitle {
   padding-top: 41px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   line-height: 1.2;
   font-weight: 500;
@@ -308,15 +315,15 @@ input:focus {
   display: flex;
   flex-direction: row;
   column-gap: 177px;
+  font-family: 'Montserrat', sans-serif;
 
   ul>li {
-    display: block;
+    display: list-item;
     margin-bottom: 26px;
-    font-family: "Montserrat";
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 400;
-    // list-style: none;
   }
 }
 
@@ -325,6 +332,7 @@ input:focus {
   display: flex;
   flex-direction: row;
   border-bottom: 2px solid $main-color;
+  font-family: 'Montserrat', sans-serif;
 
   & p {
     font-family: Montserrat;
@@ -332,10 +340,12 @@ input:focus {
     line-height: 1.2;
     font-weight: 400;
     color: #242424;
+    font-family: 'Montserrat', sans-serif;
   }
 }
 
 .column-one {
+  padding-left: 20px;
   width: 50%;
 }
 
@@ -348,24 +358,30 @@ input:focus {
   background-image: url("/img/logo/warning-cat.png");
   background-repeat: no-repeat;
   background-position: 90% 100%;
+  font-family: 'Montserrat', sans-serif;
 
   & .warning-title {
+    padding-left: 20px;
     margin-bottom: 50px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     line-height: 1.2;
     font-weight: 400;
     color: #242424;
   }
 
-  & ul>li {
+  ul {
+    margin-left: 30px;
+  }
+
+  ul>li {
+    padding-left: 20px;
     width: 40%;
     margin-bottom: 26px;
-    font-family: "Montserrat";
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 400;
-    // list-style: none;
   }
 
   & img {
@@ -374,7 +390,7 @@ input:focus {
 }
 
 .warning-list ul {
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   padding-left: 0px;
 }
 
@@ -382,7 +398,7 @@ input:focus {
   width: 100%;
   margin-top: 172px;
   background-image: url("/img/logo/reservation-cat.png");
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   background-repeat: no-repeat;
   background-position: 0% 110%;
 
@@ -390,7 +406,7 @@ input:focus {
 
 .reservation-title {
   margin-bottom: 30px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   font-size: 48px;
   line-height: 1.2;
   font-weight: 400;
@@ -411,7 +427,7 @@ input:focus {
   flex-wrap: wrap;
   align-items: center;
   padding-bottom: 60px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 400;
