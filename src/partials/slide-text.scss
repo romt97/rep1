@@ -1,0 +1,104 @@
+.gaonutosal {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+}
+
+.pesontedan {
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #fdfcfb;
+    overflow: hidden;
+}
+
+.pesontedan input {
+    margin: 0 auto;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.pesontedan label {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    background: #fdfcfb;
+    line-height: 3;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: $main-font;
+    color: #242424;
+}
+
+.pesontedan-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #fdfcfb;
+    transition: max-height .40s;
+    font-size: 14px;
+    color: black;
+    width: 100%;
+}
+
+.pesontedan-content {
+    background: #fdfcfb;
+    width: 100%;
+}
+
+.pesontedan-content p {
+    width: 100%;
+    margin: 1em;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $main-font;
+}
+
+/* :checked */
+.pesontedan input:checked~.pesontedan-content {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 85px;
+    max-height: 100vh;
+}
+
+/* Icon */
+.pesontedan label::after {
+    margin: 0 auto;
+    position: absolute;
+    right: 10px;
+    bottom: -38px;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .40s;
+    -o-transition: all .40s;
+    transition: all .40s;
+}
+
+.pesontedan input[type=checkbox]+label::after {
+    content: "\2b";
+    color: $main-color;
+    font-size: 45px;
+}
+
+.pesontedan input[type=radio]+label::after {
+    content: "\f068";
+    color: $main-color;
+}
+
+.pesontedan input[type=checkbox]:checked+label::after {
+    transform: rotate(315deg);
+}
+
+.pesontedan input[type=radio]:checked+label::after {
+    transform: rotateX(180deg);
+}

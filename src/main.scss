@@ -1,9 +1,10 @@
 @import './partials/colors.scss';
 @import './partials/fonts.scss';
+@import './partials/slide-text.scss';
 
-// body * {
-//   outline: 1px solid lightgrey;
-// }
+body * {
+  outline: 1px solid lightgrey;
+}
 
 a {
   text-decoration: none;
@@ -559,8 +560,6 @@ ul {
   animation-duration: 2s;
 }
 
-
-
 .cameras a:nth-child(1),
 .cameras a:nth-child(2),
 .cameras a:nth-child(3) {
@@ -628,28 +627,101 @@ ul {
   color: #242424;
 }
 
-.allert-block {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+.offers {
+  margin-top: 130px;
+  p {
+    font-family: $main-font;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #242424;
+  }
+
+  ul {
+    column-width: 50%;
+    column-count: 2;
+    list-style-image: url('.//img/logo/cat-list.png');
+  }
+
+  li {
+    margin: 20px;
+    font-family: $main-font;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #242424;
+  }
 }
 
-.allert-title {
+.offers span {
+  display: block;
   font-family: $main-font;
   font-size: 24px;
   line-height: 1.2;
   font-weight: 400;
-  color: #242424;
+  color: #848484;
 }
 
-.allert-text {
+.offers-list {
+  display: flex;
+}
+
+.allert-block {
+  margin: 170px 0 170px;
+  padding: 130px 79px 118px 69px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  background: #FFFEF1;
+}
+
+.ab-left-block {
+  min-width: 500px;
+}
+
+.ab-left-block img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.ab-right-block {
+  margin-left: 76px;
+
+  .ab-title {
+    font-family: $main-font;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #242424;
+  }
+
+  .ab-text {
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #242424;
+  }
+}
+
+.fears-title {
   font-family: $main-font;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
   color: #242424;
+  margin-bottom: 48px;
 }
 
-.allert-block img {
+.fears {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
 }
