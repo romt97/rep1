@@ -1,9 +1,9 @@
 @import './partials/colors.scss';
 @import './partials/fonts.scss';
 
-body * {
-  outline: 1px solid lightgrey;
-}
+// body * {
+//   outline: 1px solid lightgrey;
+// }
 
 a {
   text-decoration: none;
@@ -21,6 +21,7 @@ ul {
 
 
 .container {
+  display: flex;
   margin: 0 auto;
   max-width: 2540px;
 }
@@ -461,7 +462,7 @@ ul {
   }
 
   & .reservation-form-button {
-    margin-top: 70px;
+    margin: 50px auto;
   }
 
   & input {
@@ -545,7 +546,7 @@ ul {
   position: relative;
 }
 
-.cameras a::after {
+.room-camera::after {
   background-image: url("./img/logo/foot2.png");
   width: 70px;
   height: 57px;
@@ -553,13 +554,12 @@ ul {
   position: absolute;
   bottom: 0;
   right: -13px;
-  -webkit-transition: all 0.1s linear 0s;
-  -moz-transition: all 0.1s linear 0s;
-  -o-transition: all 0.1s linear 0s;
   transition: all 0.1s linear 0s;
   animation: wobble ease-in-out infinite;
   animation-duration: 2s;
 }
+
+
 
 .cameras a:nth-child(1),
 .cameras a:nth-child(2),
@@ -579,7 +579,7 @@ ul {
   position: relative;
   background-image: url("/img/logo/cat-happy.png");
   background-repeat: no-repeat;
-  background-position: 0% 200%;
+  background-position: 0% 100%;
 }
 
 .au-column-two {
