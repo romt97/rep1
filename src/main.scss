@@ -523,10 +523,12 @@ ul {
 }
 
 .cameras {
+  margin: 0 auto;
+  padding: 30px;
   font-size: 0;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  margin-right: -35px;
 }
 
 .cameras a {
@@ -629,7 +631,9 @@ ul {
 
 .offers {
   margin-top: 130px;
+
   p {
+    padding-left: 20px;
     font-family: $main-font;
     font-size: 40px;
     line-height: 1.2;
@@ -711,6 +715,7 @@ ul {
 }
 
 .fears-title {
+  padding-left: 20px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 600;
@@ -724,4 +729,227 @@ ul {
   width: 100%;
   flex-direction: column;
   display: flex;
+}
+
+.cooperation {
+  margin-top: 170px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.coop-title {
+  padding-left: 20px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  color: #242424;
+  padding-bottom: 60px;
+}
+
+.coop-subtitle {
+  padding-left: 20px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #242424;
+  margin-bottom: 32px;
+}
+
+.coop-text {
+  padding-left: 20px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #242424;
+  max-width: 491px;
+}
+
+.coop-right-block>div {
+  display: flex;
+  flex-wrap: wrap;
+  height: 509px;
+  width: 509px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coop-item {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #242424;
+  width: 246px;
+  height: 246px;
+  border: 1px solid #F6A6BF;
+  box-sizing: border-box;
+  border-radius: 150px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  background: #FAF7F5;
+}
+
+.footer_inner {
+  margin: 0 auto;
+  padding: 77px 0 103px;
+}
+
+.footer_inner .title {
+  padding-left: 20px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  color: #242424;
+  padding-bottom: 50px;
+}
+
+.wr_map {
+  margin-bottom: 47px;
+  display: flex;
+}
+
+.city_name {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #242424;
+  min-width: 410px;
+  padding-right: 15px;
+  padding-left: 20px;
+}
+
+.city_nav {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #848484;
+  width: 100%;
+  text-align: center;
+}
+
+.map {
+  margin-bottom: 68px;
+}
+
+.block_bottom {
+  display: flex;
+}
+
+.left_block_bottom {
+  min-width: 290px;
+  padding-right: 15px;
+}
+
+.left_block_bottom .title {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 140%;
+  color: #242424;
+}
+
+.right_block_bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item_bot_block {
+  width: 30%;
+}
+
+.item_bot_block div {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #242424;
+  margin-top: 24px;
+  padding-right: 23px;
+}
+
+.bot_line_wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bot_line {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.copys {
+  display: none;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #28AFC9;
+}
+
+.bot_line ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bot_line ul li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px;
+}
+
+.bot_line ul li a {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 100%;
+  color: #242424;
+  text-decoration: none;
+}
+
+footer {
+  margin: 0 auto;
+  background: #FAF7F5;
+
+  & .footer__in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 20px;
+    max-width: 1721px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
