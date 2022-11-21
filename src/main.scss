@@ -2,6 +2,10 @@
 @import './partials/fonts.scss';
 @import './partials/slide-text.scss';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body * {
   outline: 1px solid lightgrey;
 }
@@ -486,9 +490,9 @@ ul {
 .camera-title {
   padding-left: 20px;
   margin-top: 152px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 105px;
 }
 
 .camera-title-main {
