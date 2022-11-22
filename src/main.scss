@@ -6,9 +6,9 @@ html {
   scroll-behavior: smooth;
 }
 
-body * {
-  outline: 1px solid lightgrey;
-}
+// body * {
+//   outline: 1px solid lightgrey;
+// }
 
 a {
   text-decoration: none;
@@ -148,7 +148,10 @@ ul {
   color: #fff;
 }
 
-.af-button :hover {
+#application:hover {
+  border: 2px solid $main-color;
+  background-color: #fff;
+  color: $main-color;
   transform: scale(0.98);
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
@@ -265,22 +268,32 @@ ul {
   margin-bottom: 65px;
 }
 
-.galery {
-  display: flex;
-  position: relative;
-  flex-wrap: nowrap;
-}
-
-.slick-track {
+.reservation-button {
+  margin: 10px auto;
   width: 90%;
-  display: flex;
-  column-gap: 70px;
-  max-width: 1200px;
-}
+  height: 68px;
+  border: 1px solid #F6A6BF;
+  background-color: #F6A6BF;
+  border-radius: 100px;
+  font-family: $main-font;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 68px;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
 
-.slider-mainphoto {
-  width: 480px;
-  height: 532px;
+  & a {
+    color: #fff;
+  }
+
+  .reservation-button :hover {
+    border: 2px solid $main-color;
+    background-color: #fff;
+    color: $main-color;
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  }
 }
 
 .conditions {
@@ -296,6 +309,8 @@ ul {
     font-weight: 400;
   }
 }
+
+.gallery {}
 
 .conditions-title {
   margin-bottom: 76px;
@@ -402,8 +417,8 @@ ul {
 }
 
 .reservation {
+  margin-top: 170px;
   width: 100%;
-  margin-top: 172px;
   font-family: $main-font;
   background-image: url("/img/logo/reservation-cat.png");
   background-repeat: no-repeat;
@@ -690,12 +705,10 @@ ul {
 }
 
 .ab-left-block img {
+  width: 100%;
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
 }
 
 .ab-right-block {
@@ -886,6 +899,10 @@ ul {
 
 .item_bot_block {
   width: 30%;
+
+  & img {
+    width: 100%;
+  }
 }
 
 .item_bot_block div {
@@ -897,6 +914,7 @@ ul {
   color: #242424;
   margin-top: 24px;
   padding-right: 23px;
+  text-align: center;
 }
 
 .bot_line_wrap {
