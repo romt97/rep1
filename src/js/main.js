@@ -1,8 +1,7 @@
-// $(".phonenumber").mask("+7(999)999-99-99");
 
-// function buttonClick(elem) {
-// 	elem.value = 'Заявка отправлена!';
-// };
+function buttonClick(elem) {
+	elem.value = 'Заявка отправлена!';
+};
 
 $('.gallery').slick({
 	dots: true,
@@ -11,6 +10,7 @@ $('.gallery').slick({
 	slidesToShow: 3,
 	slidesToScroll: 4,
 	arrows: true,
+	
 	autoplay: true,
 	autoplaySpeed: 3000,
 	responsive: [
