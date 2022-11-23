@@ -10,7 +10,9 @@ $('.gallery').slick({
 	slidesToShow: 3,
 	slidesToScroll: 4,
 	arrows: true,
-	
+	variableWidth: true,
+	prevArrow: "<img src='.//img/logo/arrows-prev.png' class='prev' alt='1'>",
+	nextArrow: "<img src='.//img/logo/arrows-next.png' class='next' alt='2'>",
 	autoplay: true,
 	autoplaySpeed: 3000,
 	responsive: [

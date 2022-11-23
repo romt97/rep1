@@ -11,13 +11,12 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
   <link rel="stylesheet" href="./main.scss">
-  <title>Main Project</title>
+  <title>Котико - гостиница для кошек</title>
   <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
   <script src="https://kit.fontawesome.com/22978397b1.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
   <script src="./js/main.js" defer></script>
-  <script src="./js/phone.js" defer></script>
 </head>
 
 <body>
@@ -62,7 +61,7 @@
           <a href="#hotel-room">Номера и цены</a>
           <a href="#reservation">Заявка на бронирование</a>
           <a href="#about-us">Всё о нас</a>
-          <a href="#galery">Фотогалерея</a>
+          <a href="#gallery">Фотогалерея</a>
           <a href="#video-camers">Видеонаблюдение</a>
         </div>
         <div class="application-form">
@@ -73,6 +72,9 @@
               <label for="name"> Имя: </label> <input type="text" placeholder="___________________">
               <label for="name"> Телефон: </label> <input class="phonenumber" type="tel"
                 placeholder="+7_________________">
+                <script>
+                  $(".phonenumber").mask("+7(999)999-99-99");
+                </script>
               <input type="button" id="application" class="af-button" onclick="buttonClick(this)"
                 value="Отправить заявку">
             </div>
@@ -132,7 +134,7 @@
             </div>
           </div>
         </div>
-        <div class="gallery"> Фотогалерея
+        <div id="gallery" class="gallery">  Фотогалерея
           <div>
             <img class="gallery_item" src="./img/gallery/1.png" alt="">
           </div>
@@ -177,7 +179,7 @@
           </div>
         </div>
         <div class="conditions">
-          <p>Условия</p>
+          <p>Условия размещения</p>
           <div>
             <div class="conditions__blocks">
               <span class="conditions-title">В стоимость проживания включено</span>
@@ -450,7 +452,7 @@
               <li><a href="#hotel-room">Номера и цены</a></li>
               <li><a href="#reservation">Заявка на бронирование</a></li>
               <li style="display: none;"><a href="#about-us">Всё о нас</a></li>
-              <li><a href="#galery">Фотогалерея</a></li>
+              <li><a href="#gallery">Фотогалерея</a></li>
               <li><a href="#video-camers">Видеонаблюдение</a></li>
             </ul>
           </div>
