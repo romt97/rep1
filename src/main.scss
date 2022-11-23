@@ -6,9 +6,9 @@ html {
   scroll-behavior: smooth;
 }
 
-// body * {
-//   outline: 1px solid lightgrey;
-// }
+body * {
+  outline: 1px solid lightgrey;
+}
 
 a {
   text-decoration: none;
@@ -310,7 +310,36 @@ ul {
   }
 }
 
-.gallery {}
+.gallery {
+  position: relative;
+  margin: 170px auto auto;
+  width: 100%;
+  column-gap: 5%;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+
+  & img {
+    margin: 0 auto;
+    width: 330px;
+    height: 340px;
+  }
+}
+
+.slick-next {
+  position: absolute;
+  top: 50%;
+  right: 41px;
+  z-index: 10;
+}
+
+.slick-prev {
+  position: absolute;
+  left: 41px;
+  z-index: 10;
+}
 
 .conditions-title {
   margin-bottom: 76px;
