@@ -708,7 +708,7 @@ button {
   }
 
   .menu-item {
-    width: 100%;
+    width: 80%;
   }
 
   .menu-img {
@@ -731,8 +731,8 @@ button {
 
   .header-line {
     justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 46px;
+    margin-right: 90px;
   }
 }
 
@@ -760,10 +760,10 @@ button {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 325px) {
   body {
     background-color: rgb(204, 200, 200);
-    width: 330px;
+    // width: 100%;
   }
 
   .container {
@@ -792,7 +792,7 @@ button {
   }
 
   .header-title {
-    width: 100%;
+    width: 90%;
     position: absolute;
     bottom: -415px;
     color: yellow;
@@ -893,6 +893,14 @@ button {
     font-family: "Tinos", serif;
     text-align: center;
     font-size: 44px;
+  }
+
+  .history-desc {
+    width: 90%;
+  }
+
+  .history-title {
+    font-size: 30px;
   }
 
 }
