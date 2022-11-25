@@ -5,6 +5,10 @@
 //   outline: 1px solid lightgrey;
 // }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: $open-sans;
@@ -533,6 +537,35 @@ body {
   display: none;
 }
 
+.block {
+  display: block;
+  font-size: 40px;
+}
+
+.burger-slide {
+  position: absolute;
+  right: 30px;
+
+  a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  a:hover {
+    color: red;
+  }
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.disp {
+  display: none;
+}
+
 @media (max-width: 1500px) {
   .gallery-content {
     display: block;
@@ -654,6 +687,10 @@ body {
 }
 
 @media (max-width: 1000px) {
+  .header-line {
+    justify-content: space-between;
+  }
+
   .cards-holder {
     display: block;
   }
@@ -685,10 +722,17 @@ body {
 
   .container {
     margin: auto 40px;
+    // overflow: hidden;
   }
 
   .number-item {
     font-size: 23px;
+  }
+
+  .header-line {
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
 
@@ -737,7 +781,10 @@ body {
     justify-content: space-around;
     flex-direction: row;
     align-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
   }
+
 
   .header-logo {
     margin-bottom: 20px;
@@ -747,7 +794,8 @@ body {
   .header-title {
     width: 100%;
     position: absolute;
-    bottom: -274px;
+    bottom: -415px;
+    color: yellow;
   }
 
   .burger-text {
@@ -784,6 +832,67 @@ body {
   .footer {
     width: 350px;
     overflow: hidden;
+  }
+
+  .burger-slide {
+    position: absolute;
+    right: -14px;
+    bottom: 545px;
+  }
+
+  .card-desc {
+    padding: 0 25px;
+    text-align: center;
+    justify-content: center;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: #656363;
+  }
+
+  .left-title {
+    margin-bottom: 20px;
+    font-family: "Tinos", serif;
+    font-size: 42px;
+    font-weight: 400;
+    color: #D67E35;
+  }
+
+  .dishes-title {
+    margin-top: 132px;
+    margin-bottom: 129px;
+    text-align: center;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: 44px;
+    color: #000;
+  }
+
+  .comment-text {
+    padding: 3px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .gallery-title {
+    margin-bottom: 60px;
+    padding-top: 100px;
+    font-family: "Tinos", serif;
+    font-size: 44px;
+    text-align: center;
+  }
+
+  .cook-title {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-weight: 400;
+    font-family: "Tinos", serif;
+    text-align: center;
+    font-size: 44px;
   }
 
 }

@@ -23,17 +23,17 @@
 </head>
 
 <body>
-  <div class="header">
+  <div id="main-block" class="header">
     <div class="container">
       <div class="header-line">
         <div class="header-logo">
           <img src="./img/technics/logo.png" alt="">
         </div>
         <div class="nav">
-          <a class="nav-item" href="#">ГЛАВНАЯ</a>
-          <a class="nav-item" href="#">МЕНЮ</a>
-          <a class="nav-item" href="#">О НАС</a>
-          <a class="nav-item" href="#">БРОНЬ</a>
+          <a class="nav-item" href="#mainblock">ГЛАВНАЯ</a>
+          <a class="nav-item" href="#menu-block">МЕНЮ</a>
+          <a class="nav-item" href="#history-block">О НАС</a>
+          <a class="nav-item" href="#reservation">БРОНЬ</a>
         </div>
         <div class="cart">
           <a href="#">
@@ -57,12 +57,18 @@
           <a class="button" href="#">ЗАКАЗ СТОЛИКА</a>
         </div>
         <div class="burger-menu">
-          <a href="">
+          <button id="burger">
             <img src="./img/technics/burger-button-img.png" alt="">
-          </a>
+          </button>
+          <div id="menu" class="burger-slide disp">
+            <a class="nav-item block" href="#mainblock">ГЛАВНАЯ</a>
+            <a class="nav-item block" href="#menu-block">МЕНЮ</a>
+            <a class="nav-item block" href="#history-block">О НАС</a>
+            <a class="nav-item block" href="#reservation">БРОНЬ</a>
+          </div>
         </div>
       </div>
-      <div class="header-down">
+      <div id="mainblock" class="header-down">
         <div class="header-title">
           Добро пожаловать в
           <div class="header-subtitle">Наш ресторан
@@ -117,7 +123,7 @@
   </div>
   <div class='history'>
     <div class='container'>
-      <div class='history-holder'>
+      <div id="history-block" class='history-holder'>
         <div class='history-info'>
           <div class='history-title'>
             Наша <span>История</span>
@@ -149,7 +155,7 @@
     </div>
   </div>
 
-  <div class="black-block">
+  <div id="reservation" class="black-block">
     <div class="container">
       <div class="block-holder">
         <div class="left">
@@ -208,7 +214,7 @@
           <div class="menu-items">
             <div class="menu-item">
               <div class="menu-image">
-                <img class="menu-img" src="./img/dashes/burger-i.jpg" alt="">
+                <img id="menu-block" class="menu-img" src="./img/dashes/burger-i.jpg" alt="">
               </div>
               <div class="menu-text">Гамбургер макси
               </div>

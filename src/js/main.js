@@ -1,1 +1,6 @@
-//here will by JavaScript code ...
+const burger = document.querySelector('#burger');
+const menu = document.querySelector('#menu');
+
+burger.addEventListener('click', () => {
+    menu.classList.toggle('disp');
+});
