@@ -528,6 +528,10 @@ body {
   color: #FFF;
 }
 
+.burger-menu {
+  display: none;
+}
+
 @media (max-width: 1500px) {
   .gallery-content {
     display: block;
@@ -603,5 +607,63 @@ body {
   .history-number {
     width: auto;
   }
-
 }
+
+@media (max-width: 1185px) {
+  .burger-menu {
+    display: block;
+  }
+
+  .nav,
+  .cart,
+  .phone,
+  .btn {
+    display: none;
+  }
+
+  .header-line {
+    justify-content: space-between;
+  }
+
+  .burgers-image {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cards-holder {
+    display: block;
+  }
+
+  .card {
+    margin-top: 30px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 780px) {
+  .history-holder {
+    display: block;
+  }
+
+  .menu-item {
+    width: 90%;
+  }
+
+  .high {
+    display: none;
+  }
+
+  .container {
+    margin: auto 40px;
+  }
+
+  .number-item {
+    font-size: 23px;
+  }
+}
+
+// @media (max-width: 320px) {
+
+// }
