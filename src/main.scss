@@ -524,6 +524,17 @@ body {
 .cook-content {
   display: flex;
   justify-content: space-around;
+  column-gap: 5px;
+}
+
+.cook-discr {
+  font-size: 18px;
+  text-align: center;
+
+  span {
+    font-size: 19px;
+    color: $col-subtext-thr;
+  }
 }
 
 .footer {
@@ -570,6 +581,8 @@ button {
 .disp {
   display: none;
 }
+
+
 
 @media (max-width: 1500px) {
   .gallery-content {
@@ -642,8 +655,11 @@ button {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    width: 50%;
+  }
+
+  .cook-discr {
     margin-bottom: 30px;
-    width: 100%;
   }
 
   .block-holder {
@@ -728,7 +744,6 @@ button {
 
   .container {
     margin: auto 40px;
-    // overflow: hidden;
   }
 
   .number-item {
@@ -772,6 +787,14 @@ button {
 
   .menu-item {
     justify-content: center;
+  }
+
+  .cook-content img {
+    width: 100%;
+  }
+
+  .cook-discr {
+    font-size: 15px;
   }
 }
 
