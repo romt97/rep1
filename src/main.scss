@@ -582,8 +582,6 @@ button {
   display: none;
 }
 
-
-
 @media (max-width: 1500px) {
   .gallery-content {
     display: block;
@@ -764,8 +762,6 @@ button {
   }
 }
 
-
-
 @media (max-width: 480px) {
   body {
     background-color: rgb(204, 200, 200);
@@ -807,7 +803,6 @@ button {
     align-items: center;
     width: 100%;
     max-width: 320px;
-    overflow: auto;
     overflow-x: hidden;
   }
 
@@ -843,6 +838,7 @@ button {
     position: absolute;
     bottom: -310px;
     color: yellow;
+
   }
 
   .burger-text {
@@ -924,13 +920,12 @@ button {
   }
 
   .comment-text {
-    padding: 3px;
     margin-bottom: 20px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .gallery-title {
@@ -962,7 +957,6 @@ button {
 
   .footer {
     width: 100%;
-    // overflow: hidden;
   }
 
   html {
@@ -970,13 +964,3 @@ button {
     min-width: 320px;
   }
 }
-
-// @media (min-device-width: 320px) {
-// .footer {
-//   width: 100%;
-// }
-// }
-
-// .footer {
-//   width: 100%;
-// }
